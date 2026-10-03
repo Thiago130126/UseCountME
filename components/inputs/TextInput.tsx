@@ -48,7 +48,7 @@ export default function TextInput(){
             <p>{inputT('Quantidades.palavras')} <strong> {ContadorPalavras(texto)} </strong></p>
             <p>{inputT('Quantidades.frases')} <strong> {ContadorFrases(texto)} </strong></p>
             <div>
-                <ClearButton onClear={() => setTexto('')}/>
+                <ClearButton onClear={() => {setTexto(''); sessionStorage.removeItem('textoSalvo') }}/>
                 <CopiarButton texto={texto}/>
                 <LowerButton onSuccess={() => setTexto(texto.toLowerCase())}/>
                 <UpperButton onSuccess={() => setTexto(texto.toUpperCase())}/>

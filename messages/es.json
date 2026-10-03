@@ -1,113 +1,113 @@
 {
     "Home": {
-        "title": "Contador de Palavras em Espanhol"
+        "title": "Contador de palabras"
     },
     "Buttons": {
-        "ClearButton": "Limpar Texto",
-        "CopyButton": "Copiar Texto",
+        "ClearButton": "Borrar texto",
+        "CopyButton": "Copiar texto",
         "ToUpper": "toUpper",
         "ToLower": "ToLower"
     },
     "Toasts": {
         "CopyButton": {
-            "Message": "Não há texto para ser copiado",
-            "Success": "Copiado para a área de transferência",
-            "Error": "Falha ao copiar para a área de trasferência"
+        "Message": "No hay texto para copiar",
+        "Success": "Copiado al portapapeles",
+        "Error": "No se pudo copiar al portapapeles"
         },
         "TextInput": {
-            "Error": "Falha interna do servidor"
+        "Error": "Error interno del servidor"
         }
     },
     "TextInput": {
-        "h3": "Digite seu texto:",
+        "h3": "Introduce tu texto:",
         "Quantidades": {
-            "caracteres": "Quantidade de caracteres com espaço:",
-            "caracteres_sem_espaco": "Quantidade de caracteres sem espaço:",
-            "palavras": "Quantidade de palavras:",
-            "frases": "Quantidade de frases:"
+        "caracteres": "Cantidad de caracteres con espacios:",
+        "caracteres_sem_espaco": "Cantidad de caracteres sin espacios:",
+        "palavras": "Cantidad de palabras:",
+        "frases": "Cantidad de frases:"
         }
     },
     "Content": {
         "ComoUsar": {
-            "title": "Como Usar o Contador de Texto",
-            "intro": "Utilizar o Use Count Me é simples e instantâneo. Não é necessário fazer cadastro ou instalar qualquer extensão:",
-            "steps": {
-            "step1Title": "Digite ou cole o seu texto:",
-            "step1Text": "Insira o conteúdo diretamente na caixa de texto principal.",
-            "step2Title": "Confira as métricas em tempo real:",
-            "step2Text": "As contagens de caracteres (com e sem espaços), palavras e frases são atualizadas automaticamente conforme você digita.",
-            "step3Title": "Utilize as ações rápidas:",
+        "title": "Cómo usar el contador de texto",
+        "intro": "Usar Use Count Me es sencillo e instantáneo. No es necesario registrarse ni instalar ninguna extensión:",
+        "steps": {
+            "step1Title": "Escribe o pega tu texto:",
+            "step1Text": "Introduce el contenido directamente en el cuadro de texto principal.",
+            "step2Title": "Consulta las métricas en tiempo real:",
+            "step2Text": "Los recuentos de caracteres (con y sin espacios), palabras y frases se actualizan automáticamente mientras escribes.",
+            "step3Title": "Utiliza las acciones rápidas:",
             "actions": {
-                "copyTitle": "Copiar Texto:",
-                "copyText": "Envia o conteúdo diretamente para a área de transferência do seu dispositivo.",
-                "clearTitle": "Limpar Texto:",
-                "clearText": "Esvazia a área de digitação para iniciar uma nova contagem.",
-                "formatTitle": "Formatação Básica:",
-                "formatText": "Alterne rapidamente o texto para maiúsculas (UPPERCASE) ou minúsculas (lowercase)."
+            "copyTitle": "Copiar texto:",
+            "copyText": "Envía el contenido directamente al portapapeles de tu dispositivo.",
+            "clearTitle": "Borrar texto:",
+            "clearText": "Vacía el área de texto para que puedas iniciar un nuevo recuento.",
+            "formatTitle": "Formato básico:",
+            "formatText": "Cambia rápidamente el texto a mayúsculas (UPPERCASE) o minúsculas (lowercase)."
             }
-            },
-            "conclusion": "Como a ferramenta é focada em métricas precisas e agilidade, mantivemos a interface limpa e objetiva, ideal para revisões rápidas de trabalhos acadêmicos, postagens para redes sociais e artigos."
+        },
+        "conclusion": "Como la herramienta se centra en ofrecer métricas precisas y agilidad, hemos mantenido una interfaz limpia y sencilla, ideal para revisar rápidamente trabajos académicos, publicaciones en redes sociales y artículos."
         },
         "Etimologia": {
-            "title": "Etimologia: A Origem das Palavras que Contamos",
-            "intro": "Você já parou para pensar de onde vêm os termos que usamos diariamente ao redigir um documento? A história por trás do vocabulário da escrita é fascinante e remonta à antiguidade clássica.",
-            "palavraTitle": "Palavra",
-            "palavraBold": "\"palavra\"",
-            "palavraText": "origina-se do latim vulgar paraula, que por sua vez deriva do latim clássico parabola (com o sentido de \"comparação\", \"discurso\" ou \"alegoria\"). Esta última palavra tem raízes no grego antigo parabolē (parabolē), que significava \"colocar ao lado\" ou \"comparar\". Ao longo dos séculos, o termo evoluiu do conceito de comparação para designar a própria unidade da fala e da escrita.",
-            "textoTitle": "Texto",
-            "textoBold": "\"texto\"",
-            "textoText": "vem do latim textus, que significa literalmente \"tecido\", \"trama\" ou \"entrançado\". O termo deriva do verbo latino texere (\"tecer\"). A analogia é poética e precisa: assim como fios individuais são tecidos para formar um pano, as palavras e frases são trançadas pelo autor para compor uma obra coerente.",
-            "caractereTitle": "Caractere",
-            "caractereBold": "\"caractere\"",
-            "caractereText": "(ou caracter) vem do grego antigo kharaktēr, usado para nomear o instrumento de gravar, marcar ou estampar moedas e símbolos. Mais tarde, passou a significar o próprio sinal gravado ou a marca distintiva de algo — dando origem tanto aos caracteres tipográficos que contamos quanto ao conceito de \"caráter\" humano."
+        "title": "Etimología: el origen de las palabras que contamos",
+        "intro": "¿Alguna vez te has preguntado de dónde vienen los términos que usamos a diario al redactar un documento? La historia detrás del vocabulario de la escritura es fascinante y se remonta a la Antigüedad clásica.",
+        "palavraTitle": "Palabra",
+        "palavraBold": "\"palabra\"",
+        "palavraText": "proviene del latín vulgar paraula, que a su vez deriva del latín clásico parabola (con el significado de \"comparación\", \"discurso\" o \"alegoría\"). Esta última palabra tiene raíces en el griego antiguo parabolē (parabolē), que significaba \"poner al lado\" o \"comparar\". A lo largo de los siglos, el término evolucionó del concepto de comparación para designar la unidad básica del habla y la escritura.",
+        "textoTitle": "Texto",
+        "textoBold": "\"texto\"",
+        "textoText": "proviene del latín textus, que literalmente significa \"tejido\", \"trama\" o \"material entrelazado\". El término deriva del verbo latino texere (\"tejer\"). La analogía es poética y precisa: así como se entrelazan hilos individuales para formar una tela, el autor entrelaza palabras y frases para crear una obra coherente.",
+        "caractereTitle": "Carácter",
+        "caractereBold": "\"carácter\"",
+        "caractereText": "(o carácter) proviene del griego antiguo kharaktēr, utilizado para nombrar la herramienta con la que se grababan, marcaban o estampaban monedas y símbolos. Más tarde, pasó a significar el propio signo grabado o la marca distintiva de algo, dando origen tanto a los caracteres tipográficos que contamos como al concepto del \"carácter\" humano."
         },
         "FAQ": {
-            "title": "Perguntas Frequentes (FAQ)",
-            "q1Title": "O texto que eu digito fica salvo em algum servidor?",
-            "q1Bold": "Não.",
-            "q1Text": "Todo o processamento é feito exclusivamente no seu próprio navegador (client-side). O texto digitado não é enviado, lido ou armazenado em nenhum servidor externo. Utilizamos apenas o sessionStorage local para evitar que você perca seu progresso ao recarregar a página acidentalmente, mas tudo é apagado ao fechar a aba.",
-            "q2Title": "O Use Count Me é gratuito?",
-            "q2Bold": "Sim!",
-            "q2Text": "A ferramenta é 100% gratuita e sem limites de uso. Não é necessário criar conta, fazer login ou fornecer dados pessoais para utilizar todas as funcionalidades.",
-            "q3Title": "Como é feita a contagem de palavras e frases?",
-            "q3Text": "A contagem de palavras identifica os espaços e pontuações que separam os termos. Já a contagem de frases identifica os pontos finais, pontos de interrogação e pontos de exclamação que delimitam cada sentença no seu texto.",
-            "q4Title": "Posso usar a ferramenta pelo celular?",
-            "q4Bold": "Sim.",
-            "q4Text": "O layout do site é totalmente responsivo e adaptado para funcionar bem em computadores, tablets e smartphones."
+        "title": "Preguntas frecuentes (FAQ)",
+        "q1Title": "¿El texto que escribo se guarda en algún servidor?",
+        "q1Bold": "No.",
+        "q1Text": "Todo el procesamiento se realiza exclusivamente en tu propio navegador (del lado del cliente). El texto que escribes no se envía, lee ni almacena en ningún servidor externo. Solo utilizamos sessionStorage local para evitar que pierdas tu progreso si recargas la página accidentalmente, pero todo se elimina al cerrar la pestaña.",
+        "q2Title": "¿Use Count Me es gratis?",
+        "q2Bold": "¡Sí!",
+        "q2Text": "La herramienta es 100 % gratuita y no tiene límites de uso. No es necesario crear una cuenta, iniciar sesión ni proporcionar datos personales para utilizar todas sus funciones.",
+        "q3Title": "¿Cómo se cuentan las palabras y las frases?",
+        "q3Text": "El recuento de palabras identifica los espacios y signos de puntuación que separan los términos. El recuento de frases identifica los puntos, signos de interrogación y signos de exclamación que delimitan cada oración del texto.",
+        "q4Title": "¿Puedo usar la herramienta en mi teléfono?",
+        "q4Bold": "Sí.",
+        "q4Text": "El diseño del sitio es totalmente adaptable y está preparado para funcionar correctamente en computadoras, tabletas y teléfonos inteligentes."
         },
         "PqUsar": {
-            "title": "Por Que Usar um Contador de Palavras e Caracteres?",
-            "intro": "Em diversas situações do dia a dia, precisamos produzir conteúdos que atendam a limites rígidos de tamanho. Contar palavras ou caracteres manualmente é ineficiente e propenso a erros. O Use Count Me automatiza esse processo com precisão absoluta.",
-            "applicationsTitle": "Principais Aplicações",
-            "applications": {
-                "socialTitle": "Redes Sociais:",
-                "socialText": "Cada plataforma possui seus próprios limites de texto (como o X/Twitter, Instagram, LinkedIn e Meta Ads). Utilizar o contador evita que suas legendas ou anúncios sejam cortados.",
-                "academicTitle": "Trabalhos Acadêmicos e Escolares:",
-                "academicText": "Redações, resumos (abstracts) e artigos frequentemente exigem um número mínimo ou máximo de palavras para cumprir normas acadêmicas.",
-                "seoTitle": "Produção de Conteúdo e SEO:",
-                "seoText": "Redatores e profissionais de marketing precisam alinhar meta descrições, títulos de artigos e posts em blogs ao tamanho ideal para os mecanismos de busca.",
-                "formsTitle": "Formulários e Processos Seletivos:",
-                "formsText": "Inscrições para vagas de emprego, bolsas de estudo ou submissão de projetos costumam impor limites estritos nos campos de texto."
-            },
-            "privacy": "Além de fornecer as métricas instantaneamente, a ferramenta funciona totalmente local no seu navegador, garantindo privacidade para rascunhos confidenciais ou documentos pessoais."
+        "title": "¿Por qué usar un contador de palabras y caracteres?",
+        "intro": "En muchas situaciones cotidianas, necesitamos producir contenido que cumpla límites estrictos de extensión. Contar palabras o caracteres manualmente es ineficiente y propenso a errores. Use Count Me automatiza este proceso con absoluta precisión.",
+        "applicationsTitle": "Principales aplicaciones",
+        "applications": {
+            "socialTitle": "Redes sociales:",
+            "socialText": "Cada plataforma tiene sus propios límites de texto, como X/Twitter, Instagram, LinkedIn y Meta Ads. Utilizar el contador evita que tus subtítulos o anuncios queden cortados.",
+            "academicTitle": "Trabajos académicos y escolares:",
+            "academicText": "Los ensayos, resúmenes (abstracts) y artículos suelen exigir un número mínimo o máximo de palabras para cumplir con las normas académicas.",
+            "seoTitle": "Creación de contenido y SEO:",
+            "seoText": "Los redactores y profesionales del marketing necesitan ajustar las meta descripciones, los títulos de artículos y las publicaciones de blogs a la longitud ideal para los motores de búsqueda.",
+            "formsTitle": "Formularios y procesos de selección:",
+            "formsText": "Las solicitudes de empleo, becas o presentación de proyectos suelen imponer límites estrictos en los campos de texto."
+        },
+        "privacy": "Además de proporcionar métricas instantáneas, la herramienta funciona completamente de forma local en tu navegador, garantizando la privacidad de borradores confidenciales o documentos personales."
         },
         "VisaoAutor": {
-            "title": "Visão do Autor e Motivação",
-            "intro": "O desenvolvimento do Use Count Me nasceu do desejo de unir utilidade prática com o aprimoramento constante em desenvolvimento web moderno.",
-            "listTitle": "O que este projeto representa:",
-            "items": {
-                "logicTitle": "Prática de Lógica e Estado:",
-                "logicText": "Implementação de manipulação de strings em tempo real e gerenciamento de estado previsível com React.",
-                "archTitle": "Arquitetura com Next.js:",
-                "archText": "Exploração do App Router, organização modular de componentes e otimização para SEO e desempenho.",
-                "uxTitle": "Interface e UX:",
-                "uxText": "Construção de um visual limpo e responsivo com CSS, focado na experiência direta do usuário.",
-                "seoTitle": "SEO e Indexação Avançada:",
-                "seoText": "Aplicação prática de estratégias de otimização para mecanismos de busca, utilizando a Metadata API do Next.js, arquitetura de dados estruturados e arquivos de navegação como sitemap.xml e robots.txt para máxima visibilidade orgânica.",
-                "lifecycleTitle": "Ciclo Completo de Software:",
-                "lifecycleText": "Desde a concepção do código até o deploy em produção, com preparação para integração de métricas e anúncios."
-            },
-            "conclusion": "Além de servir como uma ferramenta funcional para o dia a dia, este projeto é um marco importante na construção do meu portfólio como desenvolvedor."
-        } 
+        "title": "La perspectiva y motivación del autor",
+        "intro": "El desarrollo de Use Count Me nació del deseo de combinar utilidad práctica con la mejora constante en el desarrollo web moderno.",
+        "listTitle": "Lo que representa este proyecto:",
+        "items": {
+            "logicTitle": "Práctica de lógica y estado:",
+            "logicText": "Implementación de manipulación de cadenas en tiempo real y gestión predecible del estado con React.",
+            "archTitle": "Arquitectura con Next.js:",
+            "archText": "Exploración del App Router, organización modular de componentes y optimización para SEO y rendimiento.",
+            "uxTitle": "Interfaz y UX:",
+            "uxText": "Construcción de un diseño limpio y adaptable con CSS, centrado en una experiencia de usuario sencilla.",
+            "seoTitle": "SEO e indexación avanzada:",
+            "seoText": "Aplicación práctica de estrategias de optimización para motores de búsqueda mediante la Metadata API de Next.js, una arquitectura de datos estructurados y archivos de navegación como sitemap.xml y robots.txt para lograr la máxima visibilidad orgánica.",
+            "lifecycleTitle": "Ciclo completo del software:",
+            "lifecycleText": "Desde la concepción del código hasta el despliegue en producción, con preparación para integrar métricas y anuncios."
+        },
+        "conclusion": "Además de servir como una herramienta funcional para el día a día, este proyecto representa un hito importante en la construcción de mi portafolio como desarrollador."
+        }
     }
 }

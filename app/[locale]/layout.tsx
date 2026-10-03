@@ -2,6 +2,8 @@ import Script from "next/script";
 import "./globals.css";
 import { Toaster } from "sonner";
 import { Metadata } from "next";
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
 
 export const metadata: Metadata = {
   title: 'Use Count Me | Contador de Palavras e Caracteres Grátis',
@@ -52,6 +54,8 @@ export default async function RootLayout({ children, params }: LayoutProps<"/">)
 
   const { locale } = await params;
 
+  const messages = await getMessages();
+
   return (
     <html lang={locale}>
       <head>
@@ -63,8 +67,10 @@ export default async function RootLayout({ children, params }: LayoutProps<"/">)
         />
       </head>
       <body>
-        {children}
-        <Toaster theme="dark" position="top-right" richColors closeButton/>
+        <NextIntlClientProvider messages={messages}>
+          {children}
+          <Toaster theme="dark" position="top-right" richColors closeButton/>
+        </NextIntlClientProvider>
       </body>
     </html>
   );

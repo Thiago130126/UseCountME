@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import { toast } from "sonner";
 
 interface CopiarButtonProps{
@@ -6,25 +7,28 @@ interface CopiarButtonProps{
 
 export default function CopiarButton({texto}: CopiarButtonProps){
 
+    const buttonsT = useTranslations('Buttons');
+    const ToastsT = useTranslations('Toasts');
+
     const Copiar = async () => {
         try{
             if (texto === ''){
-                toast.message('Não há texto para ser copiado')
+                toast.message(ToastsT('CopyButton.Message'));
             }else{
                 await navigator.clipboard.writeText(texto);
-                toast.success('Copiado para a área de transferência');
+                toast.success(ToastsT('CopyButton.Success'));
             }
             
 
         }catch(err){
             console.log('Falha ao copiar para a área de trasferência: ', err);
-            toast.error('Falha ao copiar para a área de trasferência');
+            toast.error(ToastsT('CopyButton.Error'));
         }
     }
 
     return(
         <div>
-            <button onClick={Copiar}>Copiar Texto</button>
+            <button onClick={Copiar}> {buttonsT('CopyButton')} </button>
         </div>
     );
 }

@@ -9,9 +9,13 @@ import CopiarButton from "../buttons/CopiarTexto";
 import { ContarSemEspacos } from "../utils/contadorCaracteresSemEspacoes";
 import LowerButton from "../buttons/LowerCase";
 import UpperButton from "../buttons/UpperCase";
+import { useTranslations } from "next-intl";
 
 export default function TextInput(){
     const [texto, setTexto] = useState('');
+
+    const t = useTranslations('Toasts.TextInput');
+    const inputT = useTranslations('TextInput');
 
     const TextManager = (event: React.ChangeEvent<HTMLTextAreaElement>) =>{
         setTexto(event.target.value);
@@ -27,7 +31,7 @@ export default function TextInput(){
                 }
             }catch(error){
                 console.log('Falha ao tentar acessar o Session Storage: ', error);
-                toast.error('Falha interna do servidor');
+                toast.error(t('Error'));
             }
         }
 
@@ -36,13 +40,13 @@ export default function TextInput(){
 
     return(
         <div>
-            <h3>Digite seu texto:</h3>
+            <h3>{inputT('h3')}</h3>
             <textarea style={{width: '200px', height: '200px', backgroundColor: 'lightgrey'}} value={texto} onChange={TextManager}>
             </textarea>
-            <p>Quantidade de caracteres com espaço: <strong>{contadorCaracteres(texto)}</strong></p>
-            <p>Quantidade de caracteres sem espaço: <strong>{ContarSemEspacos(texto)}</strong></p>
-            <p>Quantidade de palavras: <strong> {ContadorPalavras(texto)} </strong></p>
-            <p>Quantidade de frases: <strong> {ContadorFrases(texto)} </strong></p>
+            <p>{inputT('Quantidades.caracteres')} <strong>{contadorCaracteres(texto)}</strong></p>
+            <p>{inputT('Quantidades.caracteres_sem_espaco')} <strong>{ContarSemEspacos(texto)}</strong></p>
+            <p>{inputT('Quantidades.palavras')} <strong> {ContadorPalavras(texto)} </strong></p>
+            <p>{inputT('Quantidades.frases')} <strong> {ContadorFrases(texto)} </strong></p>
             <div>
                 <ClearButton onClear={() => setTexto('')}/>
                 <CopiarButton texto={texto}/>

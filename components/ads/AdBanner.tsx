@@ -3,6 +3,12 @@
 
 import { useEffect } from 'react';
 
+declare global {
+    interface Window {
+        adsbygoogle: unknown[];
+    }
+}
+
 interface AdBannerProps {
     dataAdSlot: string;
     dataAdFormat?: string;
@@ -17,7 +23,9 @@ export default function AdBanner({
     useEffect(() => {
         try {
         // Notifica o Google Adsense para carregar o anúncio neste bloco
-        ((window as any).adsbygoogle = (window as any).adsbygoogle || []).push({});
+        window.adsbygoogle = window.adsbygoogle || [];
+        window.adsbygoogle.push({});
+
         } catch (err) {
         console.error('Erro ao carregar anúncio AdSense:', err);
         }

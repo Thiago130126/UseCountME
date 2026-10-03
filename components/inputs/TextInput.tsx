@@ -36,7 +36,7 @@ export default function TextInput(){
         }
 
         AcessarSessionStorage();
-    }, []);
+    }, [t]);
 
     return(
         <div>

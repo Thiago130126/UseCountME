@@ -5,13 +5,17 @@ import FAQ from "@/components/content/FAQ";
 import PorqueUsar from "@/components/content/PorqueUsar";
 import VisaoAutor from "@/components/content/VisaoAutor";
 import TextInput from "@/components/inputs/TextInput";
+import { useTranslations } from "next-intl";
 
 export default function Home() {
+
+  const t = useTranslations('Home');
+
   return (
     <div>
       <main>
         <h1>
-          Contador de Palavras
+          {t('title')}
         </h1>
 
         <div>

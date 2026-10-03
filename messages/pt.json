@@ -1,4 +1,7 @@
 {
+    "Home": {
+        "title": "Contador de Palavras"
+    },
     "Buttons": {
         "ClearButton": "Limpar Texto",
         "CopyButton": "Copiar Texto",

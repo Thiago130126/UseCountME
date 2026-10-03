@@ -50,7 +50,14 @@ export const metadata: Metadata = {
     },
 };
 
-export default async function RootLayout({ children, params }: LayoutProps<"/">) {
+type LayoutProps = {
+  children: React.ReactNode;
+  params: Promise<{
+    locale: string;
+  }>;
+};
+
+export default async function RootLayout({ children, params }: LayoutProps) {
 
   const { locale } = await params;
 

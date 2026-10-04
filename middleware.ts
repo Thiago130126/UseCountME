@@ -1,6 +1,6 @@
 import createMiddleware from "next-intl/middleware";
+import { locales } from "./i18n/routes";
 
-const locales = ['pt', 'en', 'es'];
 const defaultLocale = 'en';
 const localePrefix = 'always';
 

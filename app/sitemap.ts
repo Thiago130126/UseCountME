@@ -1,14 +1,26 @@
-import type { MetadataRoute } from 'next';
+import type { MetadataRoute } from "next";
+import {
+    locales,
+    localizedRoutes,
+    type Locale,
+} from "@/i18n/routes";
 
-const baseUrl = 'https://usecountme.com';
-const locales = ["pt", "en", "es"];
+const baseUrl = "https://usecountme.com";
 
-export default function sitemap(): MetadataRoute.Sitemap {
-    const routes = ["", "/sobre", "/politica-privacidade"];
+export default function sitemap( ): MetadataRoute.Sitemap {
+    return locales.flatMap((locale) => {
+        const homePage = {
+        url: `${baseUrl}/${locale}`,
+        changeFrequency: "weekly" as const,
+        priority: 1,
+        };
 
-    return locales.flatMap((locale) => routes.map((route) => ({
-        url: `${baseUrl}/${locale}/${route}`,
-        changeFrequency: route === "" ? "weekly" : "yearly",
-        priority: route === "" ? 1 : 0.5,
-    })));
+        const internalPages = Object.values(localizedRoutes).map((route) => ({
+        url: `${baseUrl}/${locale}/${route[locale as Locale]}`,
+        changeFrequency: "yearly" as const,
+        priority: 0.5,
+        }));
+
+        return [homePage, ...internalPages];
+    });
 }

@@ -109,5 +109,77 @@
         },
         "conclusion": "Besides serving as a functional everyday tool, this project is an important milestone in building my portfolio as a developer."
         }
+    },
+    "Metadata": {
+        "title": "Use Count Me | Free Word and Character Counter",
+        "description": "Count words, characters, and sentences instantly with this free online text counter.",
+        "keywords": [
+            "words counter",
+            "character counter",
+            "online word counter",
+            "sentence counter",
+            "text counter"
+        ],
+        "ogLocale": "en_US"
+    },
+    "Sobre": {
+        "title": "About Use Count Me",
+        "intro": "Use Count Me is a fast, free, and intuitive web tool created to simplify text counting and manipulation in your daily routine.",
+        "proposalTitle": "What is the project's goal?",
+        "proposalText1": "Whether writing an essay, tweaking a social media post, or checking character limits on a document, Use Count Me was designed to deliver accurate real-time metrics without hassle.",
+        "proposalText2": "Built with Next.js, TypeScript, and React, all text processing happens directly in your browser. This ensures instant speed and total data privacy.",
+        "featuresTitle": "Key Features",
+        "features": {
+            "metricsTitle": "Real-time Metrics:",
+            "metricsText": "Character count (with and without spaces), word count, and sentence count.",
+            "formattingTitle": "Formatting Tools:",
+            "formattingText": "Quick conversion to uppercase and lowercase.",
+            "actionsTitle": "Quick Actions:",
+            "actionsText": "One-click buttons to copy text and clear the workspace.",
+            "persistenceTitle": "Data Persistence:",
+            "persistenceText": "Your text is not lost upon page reload (thanks to smart sessionStorage integration)."
+        },
+        "devTitle": "About the Developer",
+        "devText": "This is my second complete published project and part of my Web developer portfolio. The goal of bringing Use Count Me online is to apply good code architecture practices, componentization, React state management, web design, and modern service integration like Google AdSense.",
+        "thanks": "Thank you for using the tool! If you have suggestions or feedback, feel free to reach out."
+    },
+    "PoliticaPrivacidade": {
+        "title": "Privacy Policy",
+        "lastUpdatedLabel": "Last updated",
+        "lastUpdatedDate": "October 2026",
+        "intro": "Your privacy is extremely important to us. This Privacy Policy explains how your information is handled when using our text counting and manipulation tool.",
+        "section1": {
+            "title": "1. Personal Data Collection and Processing",
+            "noCollectTitle": "We do not collect or store data on servers:",
+            "noCollectText": "All text processing on our website occurs exclusively in your browser (client-side). Our servers do not receive, store, or read the text entered in the application.",
+            "storageTitle": "Temporary Local Storage:",
+            "storageText": "We use your browser's sessionStorage solely to keep your text saved while the tab remains open or during a page refresh (F5). This data is not sent to any external server and is automatically erased when the browser tab is closed."
+        },
+        "section2": {
+            "title": "2. Cookies and Third-Party Ads (Google AdSense)",
+            "intro": "To keep the service free, we use Google AdSense to display advertisements.",
+            "cookiesTitle": "Third-Party Cookie Usage:",
+            "cookiesText": "Third parties, including Google, use cookies to serve ads based on a user's prior visits to this or other websites.",
+            "adsTitle": "Advertising Cookies:",
+            "adsText": "Google's use of advertising cookies enables it and its partners to serve ads to users based on their visit to your sites and/or other sites on the Internet.",
+            "optOutTitle": "Opting Out of Personalized Advertising:",
+            "optOutText1": "You may opt out of personalized advertising by visiting",
+            "googleAdsLink": "Google Ads Settings",
+            "optOutText2": ". Alternatively, you can visit",
+            "optOutText3": "to opt out of a third-party vendor's use of cookies for personalized advertising."
+        },
+        "section3": {
+            "title": "3. Links to Third-Party Websites",
+            "text": "Our site may contain links to external websites. We have no control over the content or privacy practices of those sites and are not responsible for their respective policies."
+        },
+        "section4": {
+            "title": "4. Changes to This Policy",
+            "text": "We reserve the right to update this Privacy Policy at any time. We recommend reviewing this page periodically to stay informed."
+        },
+        "section5": {
+            "title": "5. Contact",
+            "text": "If you have any questions about this Privacy Policy, please contact us via email at:",
+            "email": "canalthiago750@gmail.com"
+        }
     }
 }

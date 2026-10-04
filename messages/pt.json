@@ -109,5 +109,77 @@
             },
             "conclusion": "Além de servir como uma ferramenta funcional para o dia a dia, este projeto é um marco importante na construção do meu portfólio como desenvolvedor."
         } 
+    },
+    "Metadata": {
+        "title": "Use Count Me | Contador de Palavras e Caracteres Grátis",
+        "description": "Conte palavras, caracteres e frases gratuitamente em tempo real.",
+        "keywords": [
+            "contador de palavras",
+            "contador de caracteres",
+            "contar palavras online",
+            "contador de frases",
+            "contador de texto"
+        ],
+        "ogLocale": "pt_BR"
+    },
+    "Sobre": {
+        "title": "Sobre o Use Count Me",
+        "intro": "O Use Count Me é uma ferramenta web rápida, gratuita e intuitiva criada para simplificar a contagem e a manipulação de textos no seu dia a dia.",
+        "proposalTitle": "Qual é a proposta do projeto?",
+        "proposalText1": "Seja para redigir uma redação, ajustar um post para redes sociais ou validar o limite de caracteres de um documento, o Use Count Me foi pensado para entregar métricas precisas em tempo real sem complicações.",
+        "proposalText2": "Desenvolvido em Next.js com TypeScript e React, todo o processamento do texto é feito diretamente no seu navegador. Isso garante velocidade instantânea e total privacidade dos seus dados.",
+        "featuresTitle": "Principais Funcionalidades",
+        "features": {
+            "metricsTitle": "Métricas em Tempo Real:",
+            "metricsText": "Contagem de caracteres (com e sem espaços), palavras e frases.",
+            "formattingTitle": "Ferramentas de Formatação:",
+            "formattingText": "Conversão rápida para caixa alta (UPPERCASE) e caixa baixa (lowercase).",
+            "actionsTitle": "Ações Rápidas:",
+            "actionsText": "Botões integrados para copiar o texto com um clique e limpar a área de trabalho.",
+            "persistenceTitle": "Persistência de Dados:",
+            "persistenceText": "Seu texto não é perdido ao recarregar a página (graças à integração inteligente com o sessionStorage)."
+        },
+        "devTitle": "Sobre o Desenvolvedor",
+        "devText": "Este é o meu segundo projeto completo publicado e faz parte do meu portfólio como desenvolvedor Web. O objetivo de colocar o Use Count Me no ar é aplicar boas práticas de arquitetura de código, componentização, manipulação de estado no React, praticar web design e integração de serviços modernos como o Google AdSense.",
+        "thanks": "Obrigado por utilizar a ferramenta! Se tiver sugestões ou feedbacks, fique à vontade para entrar em contato."
+    },
+    "PoliticaPrivacidade": {
+        "title": "Política de Privacidade",
+        "lastUpdatedLabel": "Última atualização",
+        "lastUpdatedDate": "Outubro de 2026",
+        "intro": "A sua privacidade é extremamente importante para nós. Esta Política de Privacidade explica como as suas informações são tratadas ao utilizar a nossa ferramenta de contagem e manipulação de texto.",
+        "section1": {
+            "title": "1. Coleta e Tratamento de Dados Pessoais",
+            "noCollectTitle": "Não coletamos nem armazenamos dados em servidores:",
+            "noCollectText": "O processamento de texto realizado no nosso site ocorre exclusivamente no seu navegador (client-side). Nossos servidores não recebem, armazenam nem leem o texto digitado na aplicação.",
+            "storageTitle": "Armazenamento Local Temporário:",
+            "storageText": "Utilizamos o sessionStorage do seu próprio navegador apenas para manter o seu texto salvo enquanto a aba permanecer aberta ou durante um recarregamento da página (F5). Esse dado não é enviado para nenhum servidor externo e é apagado automaticamente ao fechar a aba do navegador."
+        },
+        "section2": {
+            "title": "2. Cookies e Anúncios de Terceiros (Google AdSense)",
+            "intro": "Para manter o serviço gratuito, utilizamos o Google AdSense para exibir anúncios.",
+            "cookiesTitle": "Uso de Cookies por Terceiros:",
+            "cookiesText": "Terceiros, incluindo o Google, usam cookies para veicular anúncios com base em visitas anteriores do usuário a este ou a outros sites.",
+            "adsTitle": "Cookies de Publicidade:",
+            "adsText": "O uso de cookies de publicidade pelo Google permite que ele e seus parceiros veiculem anúncios para os usuários com base nas visitas feitas aos seus sites e/ou a outros sites na Internet.",
+            "optOutTitle": "Desativação da Publicidade Personalizada:",
+            "optOutText1": "Você pode optar por desativar a publicidade personalizada acessando as",
+            "googleAdsLink": "Configurações de Anúncios do Google",
+            "optOutText2": ". Como alternativa, você pode acessar o site",
+            "optOutText3": "para desativar o uso de cookies de publicidade personalizada por parte de terceiros."
+        },
+        "section3": {
+            "title": "3. Links para Sites de Terceiros",
+            "text": "Nosso site pode conter links para sites externos. Não temos controle sobre o conteúdo ou as práticas de privacidade desses sites e não nos responsabilizamos por suas respectivas políticas."
+        },
+        "section4": {
+            "title": "4. Alterações nesta Política",
+            "text": "Reservamo-nos o direito de atualizar esta Política de Privacidade a qualquer momento. Recomendamos revisar esta página periodicamente para se manter informado."
+        },
+        "section5": {
+            "title": "5. Contato",
+            "text": "Se você tiver alguma dúvida sobre esta Política de Privacidade, entre em contato conosco através do e-mail:",
+            "email": "canalthiago750@gmail.com"
+        }
     }
 }

@@ -141,7 +141,9 @@
         },
         "devTitle": "About the Developer",
         "devText": "This is my second complete published project and part of my Web developer portfolio. The goal of bringing Use Count Me online is to apply good code architecture practices, componentization, React state management, web design, and modern service integration like Google AdSense.",
-        "thanks": "Thank you for using the tool! If you have suggestions or feedback, feel free to reach out."
+        "thanks": "Thank you for using the tool! If you have suggestions or feedback, feel free to reach out.",
+        "seoTitle": "About Use Count Me",
+        "seoDescription": "Learn more about Use Count Me, a free tool for counting words, characters, and sentences.",
     },
     "PoliticaPrivacidade": {
         "title": "Privacy Policy",

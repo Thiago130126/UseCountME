@@ -44,6 +44,27 @@ export default function Home() {
           </div>
         </div>
       </main>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebApplication",
+            name: "Use Count Me",
+            url: "https://usecountme.com",
+            applicationCategory: "UtilitiesApplication",
+            operatingSystem: "Web",
+            description:
+              "Free online word, character, and sentence counter.",
+            offers: {
+              "@type": "Offer",
+              price: "0",
+              priceCurrency: "USD",
+            },
+          } ),
+        }}
+      />
     </div>
   );
 }

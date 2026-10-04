@@ -141,7 +141,9 @@
         },
         "devTitle": "Sobre o Desenvolvedor",
         "devText": "Este é o meu segundo projeto completo publicado e faz parte do meu portfólio como desenvolvedor Web. O objetivo de colocar o Use Count Me no ar é aplicar boas práticas de arquitetura de código, componentização, manipulação de estado no React, praticar web design e integração de serviços modernos como o Google AdSense.",
-        "thanks": "Obrigado por utilizar a ferramenta! Se tiver sugestões ou feedbacks, fique à vontade para entrar em contato."
+        "thanks": "Obrigado por utilizar a ferramenta! Se tiver sugestões ou feedbacks, fique à vontade para entrar em contato.",
+        "seoTitle": "Sobre o Use Count Me",
+        "seoDescription": "Conheça o Use Count Me, uma ferramenta gratuita para contar palavras, caracteres e frases.",
     },
     "PoliticaPrivacidade": {
         "title": "Política de Privacidade",

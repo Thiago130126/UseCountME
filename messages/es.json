@@ -143,7 +143,7 @@
         "devText": "Este es mi segundo proyecto completo publicado y forma parte de mi portafolio como desarrollador Web. El objetivo de poner Use Count Me en línea es aplicar buenas prácticas de arquitectura de código, componentización, gestión de estado en React, diseño web e integración de servicios modernos como Google AdSense.",
         "thanks": "¡Gracias por usar la herramienta! Si tienes sugerencias o comentarios, no dudes en ponerte en contacto.",
         "seoTitle": "Sobre o Use Count Me",
-        "seoDescription": "Conheça o Use Count Me, uma ferramenta gratuita para contar palavras, caracteres e frases.",
+        "seoDescription": "Conheça o Use Count Me, uma ferramenta gratuita para contar palavras, caracteres e frases."
     },
     "PoliticaPrivacidade": {
         "title": "Política de Privacidad",
@@ -182,6 +182,12 @@
             "title": "5. Contacto",
             "text": "Si tiene alguna pregunta sobre esta Política de Privacidad, contáctenos por correo electrónico a:",
             "email": "canalthiago750@gmail.com"
-        }
+        },
+        "seoTitle": "Política de Privacidad | Use Count Me",
+        "seoDescription": "Lee la política de privacidad de Use Count Me y conoce cómo se tratan el texto y los datos."
+    },
+    "Navigation": {
+        "about": "Sobre",
+        "privacy": "Privacidad"
     }
 }

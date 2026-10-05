@@ -1,0 +1,16 @@
+#4944b8
+#00a9e9
+#55eeae
+#87f4e8
+#d5f4f9
+
+Como as cores foram distribuídas no Dark Mode
+#4944b8 (Roxo índigo): Usado nas ações principais (como o botão de copiar texto) e no estado ativo de navegação, mantendo o peso visual sem agredir os olhos no fundo escuro.
+#00a9e9 (Azul celeste): Aplicado nos botões secundários (download/limpar) e nos links de navegação.
+#55eeae e #87f4e8 (Verde menta e Ciano): Os contadores em tempo real (palavras, caracteres e tempo de leitura). Em interfaces escuras, esses tons brilhantes trazem excelente legibilidade para quem está focado nos números.
+#d5f4f9 (Azul gelo claro): Textos secundários, bordas sutis e legendas, evitando o contraste excessivo do branco puro.
+
+Cor de fundo da barra de navegação: #0A1320
+Cor de fundo do conteúdo principal: #0E1726
+
+Cor de detalhes: #232756

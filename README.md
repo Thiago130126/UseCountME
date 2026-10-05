@@ -9,3 +9,4 @@ internacionalização para português, inglês e espanhol
 
 para instalar a biblioteca de internacionalização:
 ### npm install next-intl
+

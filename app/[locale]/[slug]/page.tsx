@@ -19,6 +19,7 @@ type PageProps = {
 
 export const dynamicParams = false;
 
+
 function getRouteUrls(
     routeKey: keyof typeof localizedRoutes
     ) {
@@ -35,26 +36,41 @@ function getRouteUrls(
 
 export async function generateMetadata({
     params,
-}: PageProps ): Promise<Metadata> {
+    }: PageProps ): Promise<Metadata> {
     const { locale, slug } = await params;
+
     const routeKey = getRouteKey(locale, slug);
 
     if (!routeKey) {
-        return {};
+        notFound();
     }
+
+    const namespace =
+        routeKey === "about" ? "Sobre" : "PoliticaPrivacidade";
 
     const t = await getTranslations({
         locale,
-        namespace: routeKey === "about" ? "Sobre" : "PoliticaPrivacidade",
+        namespace,
     });
 
     const baseUrl = "https://usecountme.com";
-    const localizedSlug = localizedRoutes[routeKey][locale as Locale];
+    const typedLocale = locale as Locale;
+    const localizedSlug = localizedRoutes[routeKey][typedLocale];
     const canonical = `${baseUrl}/${locale}/${localizedSlug}`;
 
+    const title = t("seoTitle" );
+    const description = t("seoDescription");
+
+    const ogLocale =
+        locale === "pt"
+        ? "pt_BR"
+        : locale === "es"
+            ? "es_ES"
+            : "en_US";
+
     return {
-        title: t("seoTitle" ),
-        description: t("seoDescription"),
+        title,
+        description,
 
         alternates: {
         canonical,
@@ -62,18 +78,23 @@ export async function generateMetadata({
         },
 
         openGraph: {
-        title: t("seoTitle"),
-        description: t("seoDescription"),
+        title,
+        description,
         url: canonical,
         siteName: "Use Count Me",
         type: "website",
-        locale: locale === "pt" ? "pt_BR" : locale === "es" ? "es_ES" : "en_US",
+        locale: ogLocale,
         },
 
         twitter: {
         card: "summary",
-        title: t("seoTitle"),
-        description: t("seoDescription"),
+        title,
+        description,
+        },
+
+        robots: {
+        index: true,
+        follow: true,
         },
     };
 }

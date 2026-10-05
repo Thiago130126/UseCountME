@@ -114,7 +114,7 @@
         "title": "Use Count Me | Free Word and Character Counter",
         "description": "Count words, characters, and sentences instantly with this free online text counter.",
         "keywords": [
-            "words counter",
+            "word counter",
             "character counter",
             "online word counter",
             "sentence counter",
@@ -143,7 +143,7 @@
         "devText": "This is my second complete published project and part of my Web developer portfolio. The goal of bringing Use Count Me online is to apply good code architecture practices, componentization, React state management, web design, and modern service integration like Google AdSense.",
         "thanks": "Thank you for using the tool! If you have suggestions or feedback, feel free to reach out.",
         "seoTitle": "About Use Count Me",
-        "seoDescription": "Learn more about Use Count Me, a free tool for counting words, characters, and sentences.",
+        "seoDescription": "Learn more about Use Count Me, a free tool for counting words, characters, and sentences."
     },
     "PoliticaPrivacidade": {
         "title": "Privacy Policy",
@@ -182,6 +182,12 @@
             "title": "5. Contact",
             "text": "If you have any questions about this Privacy Policy, please contact us via email at:",
             "email": "canalthiago750@gmail.com"
-        }
+        },
+        "seoTitle": "Privacy Policy | Use Count Me",
+        "seoDescription": "Read the Use Count Me privacy policy and learn how your text and data are handled."
+    },
+    "Navigation": {
+        "about": "About",
+        "privacy": "Privacy"
     }
 }

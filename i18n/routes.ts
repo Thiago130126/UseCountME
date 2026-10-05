@@ -29,3 +29,10 @@ export function getRouteKey(
 
     return undefined;
 }
+
+export function getLocalizedPath(
+    routeKey: RouteKey,
+    locale: Locale
+) {
+    return `/${locale}/${localizedRoutes[routeKey][locale]}`;
+}

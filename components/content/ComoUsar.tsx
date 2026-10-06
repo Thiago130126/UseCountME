@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import styles from "@/components/content/css/content.module.css";
 
 export default function ComoUsar() {
     const t = useTranslations("Content.ComoUsar");

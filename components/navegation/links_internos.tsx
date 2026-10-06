@@ -1,4 +1,5 @@
 "use client";
+import styles from "@/components/navegation/css/linksInternos.module.css";
 
 import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
@@ -16,7 +17,7 @@ export default function LinksInternos({routeKey}: {routeKey: RouteKey}){
     const t = useTranslations("Navigation");
 
     return (
-        <div>
+        <div className={styles.links}>
             <Link href={getLocalizedPath(routeKey, locale)}>
                 {t(routeKey)}
             </Link>

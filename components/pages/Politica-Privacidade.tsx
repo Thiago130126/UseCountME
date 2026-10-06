@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import styles from "@/components/pages/css/pages.module.css";
 
 export default function PoliticaPrivacidade() {
     const t = useTranslations("PoliticaPrivacidade");

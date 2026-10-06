@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import { toast } from "sonner";
+import styles from "@/components/buttons/css/btns.module.css";
 
 interface CopiarButtonProps{
     texto: string;
@@ -27,7 +28,7 @@ export default function CopiarButton({texto}: CopiarButtonProps){
     }
 
     return(
-        <div>
+        <div className={styles.btn_secondary}>
             <button onClick={Copiar}> {buttonsT('CopyButton')} </button>
         </div>
     );

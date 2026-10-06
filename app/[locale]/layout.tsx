@@ -83,7 +83,7 @@ export default async function RootLayout({ children, params }: LayoutProps) {
         strategy="afterInteractive"
         />
       </head>
-      <body>
+      <body suppressHydrationWarning>
         <NextIntlClientProvider messages={messages}>
           {children}
           <Toaster theme="dark" position="top-right" richColors closeButton/>

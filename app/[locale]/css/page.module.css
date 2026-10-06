@@ -1,0 +1,62 @@
+/* Dark Mode */
+
+.meu_site{
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar{
+    display: flex;
+    width: 16rem;
+    background-color: var(--cor-fundo-dark-sidebar);
+    min-height: 100vh;
+    justify-content: center;
+}
+
+.links_and_titles{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.main_content{
+    flex: 1;
+    background-color: var(--cor-fundo-dark-coteudo);
+    padding: 32px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "header"
+        "workbench"
+        "textos"
+        "footer";
+    gap: 1.6rem;
+}
+
+.title{
+    font-size: 32px;
+    color: var(--cor-textos-principais);
+}
+
+.nav_links{
+    color: var(--cor-texto-secundario);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.header_site{
+    grid-area: header;
+}
+
+.textarea_container{
+    grid-area: workbench;
+}
+
+.textos_container{
+    grid-area: textos;
+}
+
+.footer_site{
+    grid-area: footer;
+}

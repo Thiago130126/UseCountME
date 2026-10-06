@@ -8,77 +8,79 @@ import TextInput from "@/components/inputs/TextInput";
 import LinksInternos from "@/components/navegation/links_internos";
 import { useTranslations } from "next-intl";
 
+import styles from "@/app/[locale]/css/page.module.css";
+
 export default function Home() {
 
   const t = useTranslations('Home');
 
   return (
-    /* 1. conteúdo da página principal */
-    <div>
-      {/* 2. Dentro de main estão todas as caixas do layout */}
-      <main>
-        {/* 3. BARRA LATERAL (Sidebar / Navbar) */}
-        <div>
-          <nav>
-            <h1>Use Count Me</h1>
-
+    /* 1. conteúdo da página principal como um todo */
+    <div className={styles.meu_site}>
+      {/* 3. BARRA LATERAL (Sidebar / Navbar) */}
+      <aside className={styles.sidebar}>
+        <nav className={styles.links_and_titles}>
+          <h1 className={styles.title}>Use Count Me</h1>
+          <div className={styles.nav_links}>
             <LinksInternos routeKey="about"/>
 
             <LinksInternos routeKey="privacy"/>
+          </div>
+        </nav>
+      </aside>
 
-          </nav>
-        </div>
-
-        {/* 4. Conteúdo principal do site */}
-        <div>
+      {/* 4. Conteúdo principal do site */}
+      <main className={styles.main_content}>
+        <header className={styles.header_site}>
           <h1>
             {t('title')}
           </h1>
+        </header>
 
-          {/* 5. Área de texto */}
+        {/* 5. Área de texto */}
+        <section className={styles.textarea_container}>
+          <TextInput/>
+        </section>
+
+        {/* 6. Textos da página */}
+        <section className={styles.textos_container}>
+          {/* 7. Etimologia */}
           <div>
-            <TextInput/>
+            <Etimologia/>
           </div>
 
-          {/* 6. Textos da página */}
+          {/* 8. ComoUsar */}
           <div>
-            {/* 7. Etimologia */}
-            <div>
-              <Etimologia/>
-            </div>
-
-            {/* 8. ComoUsar */}
-            <div>
-              <ComoUsar/>
-            </div>
-
-            {/* 9. PorqueUsar */}
-            <div>
-              <PorqueUsar/>
-            </div>  
-
-            {/* 9. VisaoAutor */}
-            <div>
-              <VisaoAutor/>
-            </div>
-
-            {/* 10. FAQ */}
-            <div>
-              <FAQ/>
-            </div>
-
+            <ComoUsar/>
           </div>
-          {/* 11. Rodapé */}
-          <footer>
+
+          {/* 9. PorqueUsar */}
+          <div>
+            <PorqueUsar/>
+          </div>  
+
+          {/* 9. VisaoAutor */}
+          <div>
+            <VisaoAutor/>
+          </div>
+
+          {/* 10. FAQ */}
+          <div>
+            <FAQ/>
+          </div>
+
+        </section>
+        {/* 11. Rodapé */}
+        <footer className={styles.footer_site}>
+          <div>
             <LinksInternos routeKey="about"/>
 
             <LinksInternos routeKey="privacy"/>
-
-            <p>{process.env.NEXT_PUBLIC_VERSION}</p>
-          </footer>
-        </div>
-
+          </div>
+          <p>{process.env.NEXT_PUBLIC_VERSION}</p>
+        </footer>
       </main>
+
 
       <script
         type="application/ld+json"

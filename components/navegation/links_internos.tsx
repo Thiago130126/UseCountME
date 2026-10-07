@@ -1,5 +1,6 @@
 "use client";
 import styles from "@/components/navegation/css/linksInternos.module.css";
+import { usePathname } from "next/navigation";
 
 import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
@@ -30,10 +31,14 @@ export default function LinksInternos({routeKey}: {routeKey: NavegationKey}){
 
     const Icon = iconsByRoute[routeKey];
 
+    const pathname = usePathname();
+    const targetPath = getLocalizedPath(routeKey, locale);
+    const isActive = pathname === targetPath;
+
     return (
         <div className={styles.links}>
-            <Link href={getLocalizedPath(routeKey, locale)}>
-                <Icon size={20}/> {t(routeKey)}
+            <Link href={getLocalizedPath(routeKey, locale)} className={`${isActive ? styles.active : ""}`}>
+                <Icon size={20}/> <span>{t(routeKey)}</span>
             </Link>
         </div>
     );

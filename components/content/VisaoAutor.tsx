@@ -5,32 +5,32 @@ export default function VisaoAutor() {
     const t = useTranslations("Content.VisaoAutor");
 
     return (
-        <article>
-            <h2>{t("title")}</h2>
+        <article className={styles.article}>
+            <h2 className={styles.title}>{t("title")}</h2>
 
             <section>
-                <p>{t("intro")}</p>
+                <p className={styles.paragraph}>{t("intro")}</p>
 
-                <h3>{t("listTitle")}</h3>
-                <ul>
-                <li>
+                <h3 className={styles.subtitle}>{t("listTitle")}</h3>
+                <ul className={styles.list}>
+                <li className={styles.listItem}>
                     <strong>{t("items.logicTitle")}</strong> {t("items.logicText")}
                 </li>
-                <li>
+                <li className={styles.listItem}>
                     <strong>{t("items.archTitle")}</strong> {t("items.archText")}
                 </li>
-                <li>
+                <li className={styles.listItem}>
                     <strong>{t("items.uxTitle")}</strong> {t("items.uxText")}
                 </li>
-                <li>
+                <li className={styles.listItem}>
                     <strong>{t("items.seoTitle")}</strong> {t("items.seoText")}
                 </li>
-                <li>
+                <li className={styles.listItem}>
                     <strong>{t("items.lifecycleTitle")}</strong> {t("items.lifecycleText")}
                 </li>
                 </ul>
 
-                <p>{t("conclusion")}</p>
+                <p className={styles.paragraph}>{t("conclusion")}</p>
             </section>
         </article>
     );

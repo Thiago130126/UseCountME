@@ -5,36 +5,36 @@ export default function ComoUsar() {
     const t = useTranslations("Content.ComoUsar");
 
     return (
-        <article>
-            <h2>{t("title")}</h2>
+        <article className={styles.article}>
+            <h2 className={styles.title}>{t("title")}</h2>
 
             <section>
-                <p>{t("intro")}</p>
+                <p className={styles.paragraph}>{t("intro")}</p>
 
-                <ol>
-                <li>
+                <ol className={styles.list}>
+                <li className={styles.listItem}>
                     <strong>{t("steps.step1Title")}</strong> {t("steps.step1Text")}
                 </li>
-                <li>
+                <li className={styles.listItem}>
                     <strong>{t("steps.step2Title")}</strong> {t("steps.step2Text")}
                 </li>
-                <li>
+                <li className={styles.listItem}>
                     <strong>{t("steps.step3Title")}</strong>
-                    <ul>
-                    <li>
+                    <ul className={styles.subList}>
+                    <li className={styles.listItem}>
                         <strong>{t("steps.actions.copyTitle")}</strong> {t("steps.actions.copyText")}
                     </li>
-                    <li>
+                    <li className={styles.listItem}>
                         <strong>{t("steps.actions.clearTitle")}</strong> {t("steps.actions.clearText")}
                     </li>
-                    <li>
+                    <li className={styles.listItem}>
                         <strong>{t("steps.actions.formatTitle")}</strong> {t("steps.actions.formatText")}
                     </li>
                     </ul>
                 </li>
                 </ol>
 
-                <p>{t("conclusion")}</p>
+                <p className={styles.paragraph}>{t("conclusion")}</p>
             </section>
         </article>
     );

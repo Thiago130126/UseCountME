@@ -1,3 +1,126 @@
-.content{
-    
+.article {
+    background: #111a28;
+    border: 1px solid rgba(135, 244, 232, 0.1);
+    border-radius: 16px;
+    padding: 2.25rem 2.5rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.article:hover {
+    border-color: rgba(85, 238, 174, 0.25);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* --- Título principal (h2) --- */
+.title {
+    font-size: 1.65rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: var(--cor-textos-principais, #ffffff);
+    margin: 0 0 1.5rem 0;
+    padding-bottom: 0.85rem;
+    border-bottom: 1px solid rgba(135, 244, 232, 0.12);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.title::before {
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 1.4rem;
+    border-radius: 99px;
+    background: linear-gradient(180deg, var(--cor-contador-verde, #55eeae), var(--cor-links-botoes-secundarios, #00a9e9));
+}
+
+/* --- Subtítulos de seções (h3 em texto corrido) --- */
+.subtitle {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--cor-contadores-azul, #87f4e8);
+    margin: 1.75rem 0 0.65rem 0;
+    letter-spacing: -0.01em;
+}
+
+/* --- Parágrafos --- */
+.paragraph {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: rgba(213, 244, 249, 0.85);
+    margin: 0 0 1.2rem 0;
+}
+
+.paragraph:last-child {
+    margin-bottom: 0;
+}
+
+.article strong {
+    color: var(--cor-textos-principais, #ffffff);
+    font-weight: 700;
+}
+
+/* --- Cards internos / blocos destacados (FAQ / Etimologia) --- */
+.infoCard {
+    background: rgba(14, 23, 38, 0.6);
+    border: 1px solid rgba(135, 244, 232, 0.06);
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.infoCardTitle {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--cor-contador-verde, #55eeae);
+}
+
+.infoCard .paragraph {
+    margin-bottom: 0;
+}
+
+/* --- Listas Ordenadas e Não Ordenadas --- */
+.list {
+    margin: 1rem 0 1.5rem 1.5rem;
+    padding: 0;
+    color: rgba(213, 244, 249, 0.85);
+    line-height: 1.75;
+}
+
+.listItem {
+    margin-bottom: 0.75rem;
+    padding-left: 0.25rem;
+}
+
+.listItem::marker {
+    color: var(--cor-links-botoes-secundarios, #00a9e9);
+    font-weight: 700;
+}
+
+.subList {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    list-style-type: circle;
+}
+
+/* Responsividade --- */
+@media (max-width: 768px) {
+    .article {
+        padding: 1.5rem 1.25rem;
+        border-radius: 12px;
+    }
+
+    .title {
+        font-size: 1.35rem;
+    }
+
+    .subtitle {
+        font-size: 1.05rem;
+    }
 }

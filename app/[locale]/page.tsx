@@ -16,6 +16,8 @@ export default function Home() {
 
   const t = useTranslations('Home');
 
+  const c = useTranslations("Copy");
+
   return (
     /* 1. conteúdo da página principal como um todo */
     <div className={styles.meu_site}>
@@ -33,6 +35,12 @@ export default function Home() {
             <LinksInternos routeKey="privacy"/>
           </div>
         </nav>
+
+        <div className={styles.sidebar_footer}>
+            <p className={styles.copyright}>
+              {c("right")} &copy; 2026
+            </p>
+        </div>
       </aside>
 
       {/* 4. Conteúdo principal do site */}

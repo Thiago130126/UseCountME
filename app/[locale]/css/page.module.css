@@ -17,6 +17,22 @@
     flex-direction: column;
 }
 
+/* Empurra para o fundo da sidebar e aplica a mesma linha do switcher */
+.sidebar_footer {
+    margin-top: auto;
+    padding-top: 1.25rem;
+    border-top: 1px solid rgba(135, 244, 232, 0.08);
+}
+
+.copyright {
+    font-size: 0.75rem;
+    color: rgba(213, 244, 249, 0.45);
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+    margin: 0;
+}
+
+
 @media (max-width: 768px) {
     .meu_site {
         flex-direction: column;

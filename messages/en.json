@@ -195,5 +195,7 @@
         "home": "Write",
         "idioma": "Language"
     },
-    "Copy": "All rights reserved"
+    "Copy": {
+        "right": "All rights reserved"
+    }
 }

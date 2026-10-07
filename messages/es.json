@@ -195,5 +195,7 @@
         "home": "Escribir",
         "idioma": "Idioma"
     },
-    "Copy": "Todos los derechos reservados"
+    "Copy": {
+        "right": "Todos los derechos reservados"
+    }
 }

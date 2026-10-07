@@ -84,12 +84,21 @@ export async function generateMetadata({
         siteName: "Use Count Me",
         type: "website",
         locale: ogLocale,
+        images: [
+            {
+                url: "https://usecountme.com/og-image.png",
+                width: 1200,
+                height: 630,
+                alt: title,
+            }
+        ]
         },
 
         twitter: {
         card: "summary",
         title,
         description,
+        images: ["https://usecountme.com/og-image.png"],
         },
 
         robots: {

@@ -1,7 +1,50 @@
-.btn_primary{
-
+.btn_primary, .btn_secondary {
+    width: 100%;
 }
 
-.btn_secondary{
-    
+.btn_primary button,
+.btn_secondary button {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-family: inherit;
+    border: 1px solid transparent;
+}
+
+/* Ação Principal: Roxo Índigo (#4944b8) */
+.btn_primary button {
+    background-color: var(--cor-acoes-principais);
+    color: #ffffff;
+    box-shadow: 0 4px 14px rgba(73, 68, 184, 0.35);
+}
+
+.btn_primary button:hover {
+    background-color: #5853d1;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 18px rgba(73, 68, 184, 0.45);
+}
+
+/* Ação Secundária (Copiar / Limpar / Modificar caixa) */
+.btn_secondary button {
+    background: rgba(0, 169, 233, 0.08);
+    color: var(--cor-links-botoes-secundarios);
+    border-color: rgba(0, 169, 233, 0.3);
+}
+
+.btn_secondary button:hover {
+    background: rgba(0, 169, 233, 0.18);
+    border-color: var(--cor-links-botoes-secundarios);
+    transform: translateY(-1px);
+}
+
+button:active {
+    transform: translateY(0);
 }

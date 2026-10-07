@@ -1,6 +1,8 @@
 {
     "Home": {
-        "title": "Contador de Palavras"
+        "title": "Contador de Palavras",
+        "contagem_vivo": "Contagem ao vivo",
+        "estatisticas_texto": "Estatísticas do Texto"
     },
     "Buttons": {
         "ClearButton": "Limpar Texto",
@@ -25,7 +27,8 @@
             "caracteres_sem_espaco": "Quantidade de caracteres sem espaço:",
             "palavras": "Quantidade de palavras:",
             "frases": "Quantidade de frases:"
-        }
+        },
+        "placeholder": "Comece a digitar ou cole seu texto aqui..."
     },
     "Content": {
         "ComoUsar": {
@@ -189,6 +192,7 @@
     },
     "Navigation": {
         "about": "Sobre",
-        "privacy": "Privacidade"
+        "privacy": "Privacidade",
+        "home": "Escrever"
     }
 }

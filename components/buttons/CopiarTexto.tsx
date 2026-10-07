@@ -6,6 +6,10 @@ interface CopiarButtonProps{
     texto: string;
 }
 
+import {
+  Copy,        // copiar texto
+} from "lucide-react";
+
 export default function CopiarButton({texto}: CopiarButtonProps){
 
     const buttonsT = useTranslations('Buttons');
@@ -29,7 +33,7 @@ export default function CopiarButton({texto}: CopiarButtonProps){
 
     return(
         <div className={styles.btn_secondary}>
-            <button onClick={Copiar}> {buttonsT('CopyButton')} </button>
+            <button onClick={Copiar}> <Copy size={20} /> {buttonsT('CopyButton')} </button>
         </div>
     );
 }

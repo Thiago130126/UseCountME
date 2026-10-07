@@ -1,6 +1,8 @@
 {
     "Home": {
-        "title": "Word Counter"
+        "title": "Word Counter",
+        "contagem_vivo": "live count",
+        "estatisticas_texto": "Text Statistics"
     },
     "Buttons": {
         "ClearButton": "Clear Text",
@@ -25,7 +27,8 @@
         "caracteres_sem_espaco": "Character count without spaces:",
         "palavras": "Word count:",
         "frases": "Sentence count:"
-        }
+        },
+        "placeholder": "Start typing or paste your text here..."
     },
     "Content": {
         "ComoUsar": {
@@ -188,6 +191,7 @@
     },
     "Navigation": {
         "about": "About",
-        "privacy": "Privacy"
+        "privacy": "Privacy",
+        "home": "Write"
     }
 }

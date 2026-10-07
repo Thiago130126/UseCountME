@@ -16,6 +16,7 @@ export const localizedRoutes = {
 } as const;
 
 export type RouteKey = keyof typeof localizedRoutes;
+export type NavegationKey = RouteKey | "home";
 
 export function getRouteKey(
     locale: string,
@@ -31,8 +32,11 @@ export function getRouteKey(
 }
 
 export function getLocalizedPath(
-    routeKey: RouteKey,
+    routeKey: NavegationKey,
     locale: Locale
 ) {
+    if (routeKey === "home"){
+        return `/${locale}`;
+    }
     return `/${locale}/${localizedRoutes[routeKey][locale]}`;
 }

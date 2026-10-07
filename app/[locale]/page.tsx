@@ -9,6 +9,7 @@ import LinksInternos from "@/components/navegation/links_internos";
 import { useTranslations } from "next-intl";
 
 import styles from "@/app/[locale]/css/page.module.css";
+import Link from "next/link";
 
 export default function Home() {
 
@@ -20,8 +21,12 @@ export default function Home() {
       {/* 3. BARRA LATERAL (Sidebar / Navbar) */}
       <aside className={styles.sidebar}>
         <nav className={styles.links_and_titles}>
-          <h1 className={styles.title}>Use Count Me</h1>
+          <Link href={"/"}>
+            <img src="/use-count-me-logo-transparent.png" alt="logo"/>
+          </Link>
           <div className={styles.nav_links}>
+            <LinksInternos routeKey="home"/>
+
             <LinksInternos routeKey="about"/>
 
             <LinksInternos routeKey="privacy"/>
@@ -32,7 +37,7 @@ export default function Home() {
       {/* 4. Conteúdo principal do site */}
       <main className={styles.main_content}>
         <header className={styles.header_site}>
-          <h1>
+          <h1 className={styles.titulo_degrade}>
             {t('title')}
           </h1>
         </header>

@@ -1,66 +1,158 @@
-.workbench{
+/* Layout da Área de Trabalho (Editor + Painel Lateral) */
+.workbench {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-areas:
-        "editor controles";
-    gap: 1.6rem
+    grid-template-columns: 1fr 340px;
+    gap: 1.5rem;
+    align-items: stretch;
 }
 
-.my_textarea{
-    grid-area: editor;
+@media (max-width: 960px) {
+    .workbench {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Área do Editor de Texto */
+.my_textarea {
     display: flex;
     flex-direction: column;
+    background: #111a28;
+    border: 1px solid rgba(135, 244, 232, 0.12);
+    border-radius: 14px;
+    padding: 1.25rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-.my_textarea textarea{
+.my_textarea:focus-within {
+    border-color: rgba(0, 169, 233, 0.45);
+    box-shadow: 0 0 0 3px rgba(0, 169, 233, 0.15);
+}
+
+.textarea_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.85rem;
+}
+
+.textarea_header h3 {
+    margin: 0;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--cor-texto-secundario);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.live_badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    font-size: 0.8rem;
+    color: var(--cor-contador-verde);
+    background: rgba(85, 238, 174, 0.08);
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+    border: 1px solid rgba(85, 238, 174, 0.2);
+}
+
+.pulse_dot {
+    width: 6px;
+    height: 6px;
+    background-color: var(--cor-contador-verde);
+    border-radius: 50%;
+    box-shadow: 0 0 8px var(--cor-contador-verde);
+}
+
+.editor {
     width: 100%;
-    height: 100%;
-    min-height: 250px;
-    min-width: 250px;
+    min-height: 380px;
+    background: transparent;
+    color: var(--cor-textos-principais);
+    border: none;
+    outline: none;
     resize: vertical;
+    font-size: 1.05rem;
+    line-height: 1.65;
+    font-family: inherit;
 }
 
-.controles{
-    grid-area: controles;
+.editor::placeholder {
+    color: rgba(213, 244, 249, 0.35);
+}
+
+/* Painel de Controles e Estatísticas */
+.controles {
     display: flex;
     flex-direction: column;
-    gap: 1.6rem;
+    gap: 1.2rem;
 }
 
-.estatisticas{
-
+.stats_card {
+    background: #111a28;
+    border: 1px solid rgba(135, 244, 232, 0.12);
+    border-radius: 14px;
+    padding: 1.25rem;
 }
 
-.buttons{
+.stats_title {
+    margin: 0 0 1rem 0;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--cor-texto-secundario);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.stats_grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.stat_item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem 0.85rem;
+    background: rgba(14, 23, 38, 0.7);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.stat_label {
+    font-size: 0.9rem;
+    color: rgba(213, 244, 249, 0.8);
+}
+
+.stat_value {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--cor-textos-principais);
+}
+
+.highlight_green {
+    color: var(--cor-contador-verde);
+    text-shadow: 0 0 12px rgba(85, 238, 174, 0.25);
+}
+
+.highlight_cyan {
+    color: var(--cor-contadores-azul);
+}
+
+.no_highlight {
+    color: var(--cor-texto-secundario);
+}
+
+/* Ações e Botões */
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+}
+
+.case_buttons {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-        "lower lower"
-        "upper upper"
-        "copy clear";
-    gap: 0.75rem;
-    padding: 0.4rem;
-}
-
-.btn_lower{
-    grid-area: lower;
-}
-
-.btn_upper{
-    grid-area: upper;
-}
-
-.btn_clear{
-    grid-area: clear;
-}
-
-.btn_copy{
-    grid-area: copy;
-}
-
-.primary{
-    grid-column: span 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    gap: 0.5rem;
 }

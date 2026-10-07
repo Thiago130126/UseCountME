@@ -26,7 +26,6 @@ export default function Sobre() {
 
                         <LinksInternos routeKey="privacy"/>
                     </div>
-                    <LanguageSwitcher/>
                 </nav>
             </aside>
 

@@ -192,6 +192,7 @@
     "Navigation": {
         "about": "About",
         "privacy": "Privacy",
-        "home": "Write"
+        "home": "Write",
+        "idioma": "Language"
     }
 }

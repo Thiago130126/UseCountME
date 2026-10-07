@@ -1,7 +1,7 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
 import { Globe } from "lucide-react";
 import {
@@ -36,11 +36,13 @@ export default function LanguageSwitcher() {
         }
     }
 
+    const t = useTranslations("Navigation");
+
     return (
         <div className={styles.container}>
             <div className={styles.header}>
                 <Globe size={16} />
-                <span>Idioma</span>
+                <span>{t("idioma")}</span>
             </div>
             
             <div className={styles.switcher}>

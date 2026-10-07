@@ -192,6 +192,7 @@
     "Navigation": {
         "about": "Sobre",
         "privacy": "Privacidad",
-        "home": "Escribir"
+        "home": "Escribir",
+        "idioma": "Idioma"
     }
 }

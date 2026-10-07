@@ -26,7 +26,6 @@ export default function PoliticaPrivacidade() {
 
                         <LinksInternos routeKey="privacy"/>
                     </div>
-                    <LanguageSwitcher/>
                 </nav>
             </aside>
 

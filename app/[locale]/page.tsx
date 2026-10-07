@@ -10,6 +10,7 @@ import { useTranslations } from "next-intl";
 
 import styles from "@/app/[locale]/css/page.module.css";
 import Link from "next/link";
+import LanguageSwitcher from "@/components/navegation/LanguageSwitcher";
 
 export default function Home() {
 
@@ -40,6 +41,7 @@ export default function Home() {
           <h1 className={styles.titulo_degrade}>
             {t('title')}
           </h1>
+          <LanguageSwitcher/>
         </header>
 
         {/* 5. Área de texto */}

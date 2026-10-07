@@ -268,6 +268,11 @@
     color: rgba(213, 244, 249, 0.5);
 }
 
+.links_translate{
+    display: flex;
+    flex-direction: row;
+}
+
 /* Responsividade Mobile */
 @media (max-width: 768px) {
     .pageContainer {

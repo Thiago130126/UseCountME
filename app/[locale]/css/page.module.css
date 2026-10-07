@@ -89,6 +89,12 @@
     width: 100%;
 }
 
+.header_site{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .header_site h1 {
     font-size: 2rem;
     font-weight: 800;

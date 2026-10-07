@@ -4,6 +4,7 @@ import { ArrowLeft } from "lucide-react";
 import LinksInternos from "@/components/navegation/links_internos";
 import { getLocalizedPath, type Locale } from "@/i18n/routes";
 import styles from "@/components/pages/css/pages.module.css";
+import LanguageSwitcher from "../navegation/LanguageSwitcher";
 
 export default function Sobre() {
     const t = useTranslations("Sobre");
@@ -25,16 +26,21 @@ export default function Sobre() {
 
                         <LinksInternos routeKey="privacy"/>
                     </div>
+                    <LanguageSwitcher/>
                 </nav>
             </aside>
 
             {/* Conteúdo Principal */}
             <main className={styles.mainContent}>
                 {/* Botão de retorno direto à ferramenta principal */}
-                <Link href={getLocalizedPath("home", locale)} className={styles.backButton}>
-                    <ArrowLeft size={18} />
-                    <span>{tNav("home")}</span>
-                </Link>
+                <div className={styles.links_translate}>
+                    <Link href={getLocalizedPath("home", locale)} className={styles.backButton}>
+                        <ArrowLeft size={18} />
+                        <span>{tNav("home")}</span>
+                    </Link>
+
+                    <LanguageSwitcher/>
+                </div>
 
                 <article className={styles.article}>
                     <h1 className={styles.title}>{t("title")}</h1>

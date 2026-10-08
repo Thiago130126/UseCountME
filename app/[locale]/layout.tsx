@@ -20,7 +20,7 @@ export async function generateMetadata({
     locale, namespace: "Metadata",
   });
 
-  const baseurl = "https://usecountme.com";
+  const baseurl = "https://www.usecountme.com";
   const canonicalUrl = `${baseurl}/${locale}`;
 
   return{
@@ -46,7 +46,7 @@ export async function generateMetadata({
       type: "website",
       images: [
         {
-          url: "https://usecountme.com/og-image.png",
+          url: "https://www.usecountme.com/og-image.png",
           width: 1200,
           height: 630,
           alt: t("title" ),
@@ -58,7 +58,7 @@ export async function generateMetadata({
       card: "summary",
       title: t("title"),
       description: t("description"),
-      images: ["https://usecountme.com/og-image.png"],
+      images: ["https://www.usecountme.com/og-image.png"],
     },
 
     robots: {

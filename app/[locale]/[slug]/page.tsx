@@ -23,7 +23,7 @@ export const dynamicParams = false;
 function getRouteUrls(
     routeKey: keyof typeof localizedRoutes
     ) {
-    const baseUrl = "https://usecountme.com";
+    const baseUrl = "https://www.usecountme.com";
     const route = localizedRoutes[routeKey];
 
     return {
@@ -53,7 +53,7 @@ export async function generateMetadata({
         namespace,
     });
 
-    const baseUrl = "https://usecountme.com";
+    const baseUrl = "https://www.usecountme.com";
     const typedLocale = locale as Locale;
     const localizedSlug = localizedRoutes[routeKey][typedLocale];
     const canonical = `${baseUrl}/${locale}/${localizedSlug}`;
@@ -86,7 +86,7 @@ export async function generateMetadata({
         locale: ogLocale,
         images: [
             {
-                url: "https://usecountme.com/og-image.png",
+                url: "https://www.usecountme.com/og-image.png",
                 width: 1200,
                 height: 630,
                 alt: title,
@@ -98,7 +98,7 @@ export async function generateMetadata({
         card: "summary",
         title,
         description,
-        images: ["https://usecountme.com/og-image.png"],
+        images: ["https://www.usecountme.com/og-image.png"],
         },
 
         robots: {

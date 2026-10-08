@@ -5,7 +5,7 @@ import {
     type Locale,
 } from "@/i18n/routes";
 
-const baseUrl = "https://usecountme.com";
+const baseUrl = "https://www.usecountme.com";
 
 export default function sitemap( ): MetadataRoute.Sitemap {
     return locales.flatMap((locale) => {

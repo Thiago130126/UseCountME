@@ -109,10 +109,10 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
-            "@context": "https://schema.org",
+            "@context": "https://www.schema.org",
             "@type": "WebApplication",
             name: "Use Count Me",
-            url: "https://usecountme.com",
+            url: "https://www.usecountme.com",
             applicationCategory: "UtilitiesApplication",
             operatingSystem: "Web",
             description:

@@ -36,7 +36,7 @@ export default function AdBanner({
         <ins
             className="adsbygoogle"
             style={{ display: 'block' }}
-            //data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"  Seu ID do AdSense
+            data-ad-client="ca-pub-8926661403362659"  //Seu ID do AdSense
             data-ad-slot={dataAdSlot}
             data-ad-format={dataAdFormat}
             data-full-width-responsive={dataFullWidthResponsive ? 'true' : 'false'}

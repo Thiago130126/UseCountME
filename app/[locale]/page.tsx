@@ -6,11 +6,13 @@ import PorqueUsar from "@/components/content/PorqueUsar";
 import VisaoAutor from "@/components/content/VisaoAutor";
 import TextInput from "@/components/inputs/TextInput";
 import LinksInternos from "@/components/navegation/links_internos";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 import styles from "@/app/[locale]/css/page.module.css";
 import Link from "next/link";
 import LanguageSwitcher from "@/components/navegation/LanguageSwitcher";
+import { getLocalizedPath } from "@/i18n/routes";
+import Image from "next/image";
 
 export default function Home() {
 
@@ -18,14 +20,16 @@ export default function Home() {
 
   const c = useTranslations("Copy");
 
+  const locale = useLocale() as Locale;
+
   return (
     /* 1. conteúdo da página principal como um todo */
     <div className={styles.meu_site}>
       {/* 3. BARRA LATERAL (Sidebar / Navbar) */}
       <aside className={styles.sidebar}>
         <nav className={styles.links_and_titles}>
-          <Link href={"/"}>
-            <img src="/use-count-me-logo-transparent.png" alt="logo"/>
+          <Link href={getLocalizedPath("home", locale)}>
+            <Image src="/use-count-me-logo-transparent.png" alt="logo" width={521} height={226}/>
           </Link>
           <div className={styles.nav_links}>
             <LinksInternos routeKey="home"/>

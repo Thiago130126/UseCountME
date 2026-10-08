@@ -14,6 +14,10 @@ import LanguageSwitcher from "@/components/navegation/LanguageSwitcher";
 import { getLocalizedPath } from "@/i18n/routes";
 import Image from "next/image";
 
+import {
+    type Locale,
+} from "@/i18n/routes";
+
 export default function Home() {
 
   const t = useTranslations('Home');

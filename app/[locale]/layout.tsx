@@ -89,7 +89,7 @@ export default async function RootLayout({ children, params }: LayoutProps) {
         async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8926661403362659"
         crossOrigin="anonymous"
-        strategy="afterInteractive"
+        //strategy="afterInteractive"
         />
       </head>
       <body suppressHydrationWarning>

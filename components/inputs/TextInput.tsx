@@ -11,6 +11,7 @@ import LowerButton from "../buttons/LowerCase";
 import UpperButton from "../buttons/UpperCase";
 import { useTranslations } from "next-intl";
 import styles from "@/components/inputs/css/TextInput.module.css";
+import { text } from "stream/consumers";
 
 export default function TextInput(){
     const [texto, setTexto] = useState('');
@@ -30,6 +31,7 @@ export default function TextInput(){
                 const textoSalvo = sessionStorage.getItem('textoSalvo');
                 if(textoSalvo !== null){
                     setTexto(textoSalvo);
+
                 }
             }catch(error){
                 console.log('Falha ao tentar acessar o Session Storage: ', error);
@@ -97,8 +99,16 @@ export default function TextInput(){
                 </div>
 
                 <div className={styles.buttons}>
-                    <UpperButton onSuccess={() => setTexto(texto.toUpperCase())} />
-                    <LowerButton onSuccess={() => setTexto(texto.toLowerCase())} />
+                    <UpperButton onSuccess={() => {
+                        setTexto(texto.toUpperCase());
+                        const novoTexto = texto.toUpperCase();
+                        sessionStorage.setItem('textoSalvo', novoTexto);
+                    }} />
+                    <LowerButton onSuccess={() => {
+                        setTexto(texto.toLowerCase());
+                        const novoTexto = texto.toLowerCase();
+                        sessionStorage.setItem('textoSalvo', novoTexto);
+                    }} />
                     <div className={styles.case_buttons}>
                         <CopiarButton texto={texto} />
                         <ClearButton onClear={() => { setTexto(''); sessionStorage.removeItem('textoSalvo'); }} />

@@ -1,0 +1,5 @@
+services:
+  use-count-me:
+    build: .
+    container_name: use-count-me
+    restart: always

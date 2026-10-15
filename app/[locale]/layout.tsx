@@ -4,6 +4,8 @@ import { Toaster } from "sonner";
 import { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
+import { locales } from "@/i18n/routes";
+
 
 type MetadataProps = {
   params: Promise<{
@@ -11,10 +13,15 @@ type MetadataProps = {
   }>;
 };
 
+export function generateStaticParams(){
+  return locales.map((locale) => ({locale}));
+}
+
 export async function generateMetadata({
   params,
 }: MetadataProps): Promise<Metadata>{
   const { locale } = await params;
+  
 
   const t = await getTranslations({
     locale, namespace: "Metadata",

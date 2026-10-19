@@ -124,7 +124,7 @@ export default function PoliticaPrivacidade() {
                         <LinksInternos routeKey="about" />
                         <LinksInternos routeKey="privacy" />
                     </div>
-                    <p className={styles.version}>{process.env.NEXT_PUBLIC_VERSION || "v1.0"}</p>
+                    <p className={styles.version}>{process.env.NEXT_PUBLIC_VERSION}</p>
                 </footer>
             </main>
         </div>

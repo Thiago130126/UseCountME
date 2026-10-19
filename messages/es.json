@@ -197,5 +197,36 @@
     },
     "Copy": {
         "right": "Todos los derechos reservados"
+    },
+    "BoringSites": {
+        "title": "Boring Sites",
+        "subtitle": "Creando un boring site",
+        "introTitle": "Introducción",
+        "introText": "Si eres desarrollador, seguro que ya has oído hablar de los 'boring sites' (sitios aburridos/útiles), sobre todo si sigues contenido en inglés. Hay un montón de vídeos prometiendo ganar $1.000 al mes creando estas herramientas sencillas y, bueno... aquí te voy a contar la verdad sobre este tipo de proyectos, cómo crearlos y cómo monetizarlos.",
+        "whatAreTitle": "¿Qué son los Boring Sites?",
+        "whatAreText": "Los boring sites son páginas web súper sencillas enfocadas en una sola utilidad. Funcionan como herramientas 100% gratuitas para tareas puntuales: contar palabras, cambiar mayúsculas y minúsculas, tirar un dado, generar texto aleatorio, etc. Son ese tipo de webs que todo el mundo necesita usar de vez en cuando. Por ejemplo, un estudiante de inglés que tiene que escribir una redacción con un mínimo de 150 palabras usa un contador de palabras online para no tener que contarlas a mano una a una. Sinceramente, yo he sido ese alumno muchas veces y lo seguiré siendo, ¡porque sigo haciendo mi curso de inglés!",
+        "monetizationTitle": "Monetización de los Boring Sites",
+        "monetizationText": "¿Se puede ganar dinero con estos sitios? ¡Claro que sí! Pero antes de explicártelo, te adelanto que más adelante te contaré mi experiencia real con <strong>Use Count Me</strong>. Toda web tiene costes para mantenerse online (hosting, dominio, etc.). Entonces, ¿cómo genera ingresos una herramienta gratuita? La respuesta son los anuncios. El flujo es sencillo: el usuario busca en Google, entra en tu web, se cargan los anuncios, usa la herramienta y se va. Al final del mes, la idea es que el volumen de impresiones deje algo de dinero.",
+        "adsOriginTitle": "¿De Dónde Vienen los Anuncios?",
+        "adsOriginText": "Los anuncios proceden de Google AdSense. Das de alta tu web y, en un plazo de entre unos días y 4 semanas, Google te dice si la aprueba o la rechaza. Pero hay reglas: necesitas páginas de Política de Privacidad y Sobre Nosotros, además de contenido de texto sustancial. Y ahí está el problema de las herramientas como Use Count Me: ¿qué tipo de contenido pones en un contador de palabras? ¿Vas a escribir sobre la historia del conteo? Por falta de contenido escrito, mi web fue rechazada en AdSense tras esperar una semana. ¡Y por eso mismo estoy escribiendo este artículo ahora mismo: para darle chicha a la web e intentarlo de nuevo!",
+        "realityTitle": "La Dura Realidad",
+        "realityText": "Los boring sites no van a hacer rico a ningún dev de la noche a la mañana. Lo normal es tardar varios meses en empezar a ver algo de dinero. No vale la pena pagar publicidad (tráfico de pago) para estos proyectos, porque el margen de los anuncios es bajo. Todo depende 100% del tráfico orgánico con un buen trabajo de SEO.",
+        "whyBuiltTitle": "¿Por Qué Decidí Crear Use Count Me?",
+        "whyBuiltText": "Use Count Me es mi segundo proyecto real publicado. El primero fue una SPA de gestión de gastos con tecnologías muy chulas, pero tardé muchísimo en acabarla. Como quería ganar experiencia con Next.js, React y proyectos reales sin tirarme meses, decidí probar con un boring site. Sinceramente, aunque me dio bastantes quebraderos de cabeza (una historia que detallo en esta <pageLink>página</pageLink>), he aprendido muchísimo. Estoy aprendiendo a mantener una web viva, entendiendo el SEO en el mundo real, lanzando mi primer proyecto internacional en inglés, portugués y español, y cometiendo fallos de los que aprender."
+    },
+    "ContadorPalavras": {
+        "title": "Contador de Palabras",
+        "subtitle": "Mi experiencia creando un sitio web contador de palabras",
+        "beginningTitle": "Desde el Principio",
+        "beginningText": "El motivo por el que creé Use Count Me ya lo explico en esta <boringSitesLink>página</boringSitesLink>, así que iré al grano: desarrollar el código fue la parte más fácil de todo el proyecto. Una vez publicado, todo fueron quebraderos de cabeza. Justo cuando pensaba que estaba listo y que por fin podía relajarme, aparecía un problema nuevo. ¡No es nada fácil!",
+        "searchConsoleTitle": "Search Console",
+        "searchConsoleText": "Para que una web aparezca en Google, debes darla de alta en Google Search Console para que indexe las páginas. Para que esto funcione, necesitas configurar los archivos sitemap.xml y robots.txt: el robots indica los permisos de acceso a los bots de Google y el sitemap muestra todas las rutas de la web. Cuando fui a darlo de alta, Search Console no encontraba el sitemap, así que tuve que rehacerlo. Además, tuve que cambiar el tamaño del favicon a 512x512 para que se mostrara bien en los resultados de búsqueda.",
+        "hostingTitle": "Alojamiento Web (Hosting)",
+        "hostingText": "Mi siguiente gran marrón fue el hosting. Originalmente subí Use Count Me a Vercel con el plan Hobby (que es gratuito). Pensaba que era gratis por el poco tráfico, pero realmente ese plan es exclusivo para proyectos no comerciales. Me dio por leer los términos de uso (¿quién lo diría?) y vi que Vercel podía tumbarme la web en cualquier momento sin avisar. Para no arriesgarme a que me borrasen el sitio cuando tuviera anuncios, lo migré todo a un VPS de Hostinger que ya tenía. Tuve que configurar Docker, Nginx y pasar la web a exportación estática para que fuera súper ligera. También tuve que tocar el middleware: antes de la versión 1.1.8, la web detectaba el idioma del navegador y redirigía a /pt, /en o /es. Ahora ya no lo hace: redirige por defecto a todo el mundo a /en.",
+        "adsenseTitle": "AdSense",
+        "adsenseText": "Cuando envié la web a Google AdSense, no me esperaba tardar una semana entera en recibir respuesta; pensaba que tardarían 2 o 3 días. ¿El resultado? ¡Rechazado! Me la denegaron por 'falta de contenido'. Así que estoy literalmente escribiendo el texto de esta página y de esta otra <boringSitesLink>página</boringSitesLink> solo para intentar pasar la revisión de AdSense otra vez.",
+        "worthItTitle": "¿Valió la Pena?",
+        "worthItText": "¡Sin duda alguna valió la pena! Cometí bastantes errores durante el desarrollo, al fin y al cabo es mi segundo proyecto real subido a internet. Fallé en la organización de los componentes de React (donde la interfaz se divide en piezas reutilizables como piezas de Lego). Se me olvidó hacer componentes reutilizables para el header, footer y la navbar... ¡así que sí, estoy literalmente haciendo un copiar y pegar del mismo código para cada página nueva que creo! ¿Por qué no lo arreglo? ¡Por pura pereza! Tendría que cambiar el HTML y el CSS de todas las páginas ya hechas. Otro fallo fue alojarlo en Vercel pensando que el uso comercial era gratis: nadie da duros a cuatro pesetas. Pero cada fallo en el código o en el despliegue sirve como un aprendizaje enorme para los proyectos que vienen. Fue súper divertido crear Use Count Me y, si has leído hasta aquí, ¡estoy sinceramente sorprendido! Dicho esto... ¡a por el siguiente proyecto!"
     }
+
 }

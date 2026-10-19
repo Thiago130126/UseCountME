@@ -197,5 +197,35 @@
     },
     "Copy": {
         "right": "All rights reserved"
+    },
+    "BoringSites": {
+        "title": "Boring Sites",
+        "subtitle": "Building a boring site",
+        "introTitle": "Introduction",
+        "introText": "If you're a developer, you've probably come across the term 'boring site'—especially if you follow tech content in English. There are tons of videos claiming you can make $1,000/month building these simple tools. So, well... here's my honest take on this category of websites, how to build them, and how monetizing them actually works.",
+        "whatAreTitle": "What Are Boring Sites?",
+        "whatAreText": "Boring sites are super simple, single-purpose web utilities. They're completely free online tools made for one quick task: counting words, changing text case, rolling a die, generating text, you name it. They're the kind of site people randomly need out of nowhere. For instance, an English student writing an essay with a 150-word minimum will pop their text into an online word counter instead of manually counting every single word. Honestly, I've been that student many times—and I still am, since I'm currently taking English classes!",
+        "monetizationTitle": "Monetizing Boring Sites",
+        "monetizationText": "You're probably wondering if you can actually make money with these sites, and the short answer is yes! Before getting into details, keep in mind I'll share my hands-on experience with <strong>Use Count Me</strong> later on. Every website has running costs—hosting, domain registration, and so on. So how does a free, simple utility make a profit? Ads. The business model relies on search intent: users Google a tool, click your top link, ads render, they use the tool, and leave. By the end of the month, high ad impressions hopefully turn into some decent pocket money.",
+        "adsOriginTitle": "Where Do the Ads Come From?",
+        "adsOriginText": "The ads shown on the site come from Google AdSense. You submit your site and wait anywhere from a few days to four weeks for an approval or rejection email. However, AdSense has strict guidelines: you must have Privacy Policy and About pages, plus actual substantial content. That's the main bottleneck for utility tools like Use Count Me—what kind of 'articles' are you supposed to put on a word counter? Write about the history of counting words? Because of this lack of written content, Use Count Me got rejected by AdSense after a week of waiting. And that's literally why I'm writing this article right now: to add valuable content and get approved on my next attempt!",
+        "realityTitle": "The Reality Check",
+        "realityText": "Boring sites aren't a get-rich-quick scheme for devs. Realistically, it takes several months before you see any meaningful revenue. Running paid ads makes zero sense here, as you'd be spending money on traffic just to earn fractions of a cent on ad impressions. It's all about organic traffic through solid SEO.",
+        "whyBuiltTitle": "Why Did I Build Use Count Me?",
+        "whyBuiltText": "Use Count Me is my second live production project. My first project was a single-page expense management app packed with cool tech, but it took way too long to finish. I wanted to level up my Next.js, React, and production skills without spending months on a single build, so I went with a boring site. Honestly? Even though it gave me quite a headache (a story I share in detail on this <pageLink>page</pageLink>), I learned a ton. I'm learning how to maintain a real app online, practicing hands-on SEO, launching my first multi-language project in English, Portuguese, and Spanish, and making plenty of mistakes I can grow from."
+    },
+    "ContadorPalavras": {
+        "title": "Word Counter",
+        "subtitle": "My experience building a word counter website",
+        "beginningTitle": "From the Beginning",
+        "beginningText": "The backstory behind why I built Use Count Me is already covered on this <boringSitesLink>page</boringSitesLink>, so I'll get straight to the point: code development was actually the easiest part. Once I launched it online, it was nonstop headaches. Right when I thought everything was finished and I could finally chill, a brand-new issue would pop up. It's tough!",
+        "searchConsoleTitle": "Search Console",
+        "searchConsoleText": "To show up on Google, you have to submit your site to Google Search Console so its pages can get indexed. For that to happen smoothly, you need proper sitemap.xml and robots.txt files. The robots file tells Googlebot what it can crawl, while the sitemap lists all valid routes. When I submitted my site, Search Console couldn't find the sitemap, so I had to rebuild it. On top of that, I had to resize my favicon to 512x512 so Google search results would display the icon properly.",
+        "hostingTitle": "Hosting",
+        "hostingText": "My next big mess was hosting. Originally, I deployed Use Count Me on Vercel using their free Hobby plan. I assumed it was free based on low traffic volume, but in reality, that tier is strictly for non-commercial projects. I actually went and read the Terms of Service (who would've thought?), only to discover Vercel could take down my site anytime without notice. To avoid having my site pulled once ads were running, I migrated everything to a Hostinger VPS I already had. That meant setting up Docker, Nginx, and converting the app to static exports so it runs super light. I also had to tweak the middleware: prior to v1.1.8, the site detected the user's browser language and redirected to /pt, /en, or /es. Now, it skips detection and defaults everyone straight to /en.",
+        "adsenseTitle": "AdSense",
+        "adsenseText": "When I submitted the site to Google AdSense, I definitely didn't expect to wait a full week for a review—I figured it'd take two or three days tops. The answer? Rejected! It got turned down for lack of content. So I am literally writing this article and this other <boringSitesLink>page</boringSitesLink> right now just to re-apply and pass the AdSense check.",
+        "worthItTitle": "Was It Worth It?",
+        "worthItText": "Without a doubt, 100% worth it! I made plenty of mistakes during development—after all, this is only my second production project. I messed up component organization in React (where UI elements are supposed to be modular, Lego-like components). I didn't make reusable components for my header, footer, or navbar... so yeah, I am literally copy-pasting the same code blocks into every single new page I build! Why haven't I fixed it? Pure laziness! I'd have to refactor the HTML and CSS across all existing pages. Another mistake was hosting on Vercel thinking commercial use was free—there's no such thing as a free lunch. But every mistake I made, whether in code or deployment, is a huge lesson for my upcoming projects. Building Use Count Me was super fun, and if you made it this far into my rambling, I'm genuinely impressed! With that said... on to the next project!"
     }
 }

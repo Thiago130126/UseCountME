@@ -121,7 +121,33 @@
             "contador de caracteres",
             "contar palavras online",
             "contador de frases",
-            "contador de texto"
+            "contador de texto",
+            "count me"
+        ],
+        "ogLocale": "pt_BR"
+    },
+    "BoringSitesMetadata": {
+        "title": "Use Count Me | Boring Site",
+        "description": "Um boring site, criado por um dev solo",
+        "keywords": [
+            "boring site",
+            "como criar um boring site",
+            "o que são boring sites",
+            "sites utilitários",
+            "monetização de sites simples",
+            "desenvolvimento web"
+        ],
+        "ogLocale": "pt_BR"
+    },
+    "ContadorMetadata": {
+        "title": "Use Count Me | Boring Site",
+        "description": "Um boring site, criado por um dev solo",
+        "keywords": [
+            "boring site",
+            "criar contador de palavras",
+            "deploy site estático",
+            "desafios desenvolvimento web",
+            "desenvolvendo um boring site"
         ],
         "ogLocale": "pt_BR"
     },

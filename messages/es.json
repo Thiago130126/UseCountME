@@ -125,6 +125,31 @@
         ],
         "ogLocale": "es_ES"
     },
+    "BoringSitesMetadata": {
+        "title": "Use Count Me | Boring Site",
+        "description": "Un Boring Site creado por un desarrollador independiente",
+        "keywords": [
+            "boring sites",
+            "qué son los boring sites",
+            "cómo crear un boring site",
+            "sitios web de utilidades",
+            "monetizar páginas web sencillas",
+            "desarrollo web"
+        ],
+        "ogLocale": "es_ES"
+    },
+    "ContadorMetadata": {
+        "title": "Use Count Me | Boring Site",
+        "description": "Un Boring Site creado por un desarrollador independiente",
+        "keywords": [
+            "boring sites",
+            "crear un contador de palabras",
+            "implementar un sitio web estático",
+            "retos del desarrollo web",
+            "desarrollando una página web aburrida"
+        ],
+        "ogLocale": "es_ES"
+    },
     "Sobre": {
         "title": "Sobre Use Count Me",
         "intro": "Use Count Me es una herramienta web rápida, gratuita e intuitiva creada para simplificar el conteo y la manipulación de textos en tu día a día.",

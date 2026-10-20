@@ -194,7 +194,9 @@
         "about": "Sobre",
         "privacy": "Privacidade",
         "home": "Escrever",
-        "idioma": "Idioma"
+        "idioma": "Idioma",
+        "boring": "Boring Site",
+        "contador": "Contador"
     },
     "Copy": {
         "right": "Todos os direitos reservados"

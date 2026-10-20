@@ -15,6 +15,8 @@ import {
     Info,        // about
     Shield,      // privacy
     PenLine,     // write
+    LayoutGrid,  // boring
+    BookOpen,    // contador
     type LucideIcon,
 } from "lucide-react";
 
@@ -22,6 +24,8 @@ const iconsByRoute: Record<NavegationKey, LucideIcon> = {
     home: PenLine,
     about: Info,
     privacy: Shield,
+    boring: LayoutGrid,
+    contador: BookOpen
 }
 
 export default function LinksInternos({routeKey}: {routeKey: NavegationKey}){

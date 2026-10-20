@@ -8,6 +8,7 @@ import TextInput from "@/components/inputs/TextInput";
 import LinksInternos from "@/components/navegation/links_internos";
 import { useLocale, useTranslations } from "next-intl";
 
+
 import styles from "@/app/[locale]/css/page.module.css";
 import Link from "next/link";
 import LanguageSwitcher from "@/components/navegation/LanguageSwitcher";
@@ -17,6 +18,8 @@ import Image from "next/image";
 import {
     type Locale,
 } from "@/i18n/routes";
+
+
 
 export default function Home() {
 
@@ -37,10 +40,10 @@ export default function Home() {
           </Link>
           <div className={styles.nav_links}>
             <LinksInternos routeKey="home"/>
-
             <LinksInternos routeKey="about"/>
-
             <LinksInternos routeKey="privacy"/>
+            <LinksInternos routeKey="boring"/>
+            <LinksInternos routeKey="contador"/>
           </div>
         </nav>
 

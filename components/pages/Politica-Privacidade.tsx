@@ -21,10 +21,10 @@ export default function PoliticaPrivacidade() {
                     </Link>
                     <div className={styles.nav_links}>
                         <LinksInternos routeKey="home"/>
-
                         <LinksInternos routeKey="about"/>
-
                         <LinksInternos routeKey="privacy"/>
+                        <LinksInternos routeKey="boring"/>
+                        <LinksInternos routeKey="contador"/>
                     </div>
                 </nav>
             </aside>

@@ -13,6 +13,16 @@ export const localizedRoutes = {
         en: "privacy-policy",
         es: "politica-de-privacidad",
     },
+    boring: {
+        pt: "boring-site",
+        en: "boring-site",
+        es: "boring-site",
+    },
+    contador: {
+        pt: "contador-palavras",
+        en: "word-counter",
+        es: "contador-palabras"
+    }
 } as const;
 
 export type RouteKey = keyof typeof localizedRoutes;

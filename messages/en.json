@@ -193,7 +193,9 @@
         "about": "About",
         "privacy": "Privacy",
         "home": "Write",
-        "idioma": "Language"
+        "idioma": "Language",
+        "boring": "Boring Site",
+        "contador": "Word Counter"
     },
     "Copy": {
         "right": "All rights reserved"
@@ -202,7 +204,7 @@
         "title": "Boring Sites",
         "subtitle": "Building a boring site",
         "introTitle": "Introduction",
-        "introText": "If you're a developer, you've probably come across the term 'boring site'—especially if you follow tech content in English. There are tons of videos claiming you can make $1,000/month building these simple tools. So, well... here's my honest take on this category of websites, how to build them, and how monetizing them actually works.",
+        "introText": "If you're a developer, you've probably come across the term 'boring site' especially if you follow tech content in English. There are tons of videos claiming you can make $1,000/month building these simple tools. So, well... here's my honest take on this category of websites, how to build them, and how monetizing them actually works.",
         "whatAreTitle": "What Are Boring Sites?",
         "whatAreText": "Boring sites are super simple, single-purpose web utilities. They're completely free online tools made for one quick task: counting words, changing text case, rolling a die, generating text, you name it. They're the kind of site people randomly need out of nowhere. For instance, an English student writing an essay with a 150-word minimum will pop their text into an online word counter instead of manually counting every single word. Honestly, I've been that student many times—and I still am, since I'm currently taking English classes!",
         "monetizationTitle": "Monetizing Boring Sites",

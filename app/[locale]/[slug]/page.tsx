@@ -9,6 +9,8 @@ import {
 import { notFound } from "next/navigation";
 import PoliticaPrivacidade from "@/components/pages/Politica-Privacidade";
 import Sobre from "@/components/pages/Sobre";
+import BoringSites from "@/components/pages/Boring-Sites";
+import ContadorPalavras from "@/components/pages/Contador-Palavras";
 
 type PageProps = {
     params: Promise<{
@@ -131,6 +133,12 @@ export default async function LocalizedPage({ params }: PageProps) {
 
         case "privacy":
         return <PoliticaPrivacidade />;
+
+        case "boring":
+        return <BoringSites/>;
+
+        case "contador":
+        return <ContadorPalavras/>;
 
         default:
         notFound();

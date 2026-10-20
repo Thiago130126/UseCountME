@@ -6,10 +6,12 @@ import { getLocalizedPath, type Locale } from "@/i18n/routes";
 import styles from "@/components/pages/css/pages.module.css";
 import LanguageSwitcher from "../navegation/LanguageSwitcher";
 
+
+
 export default function BoringSites() {
     const t = useTranslations("BoringSites");
     const tNav = useTranslations("Navigation");
-    const locale = useLocale();
+    const locale = useLocale() as Locale;
     const th = useTranslations("Sobre");
 
     return (
@@ -78,8 +80,12 @@ export default function BoringSites() {
                         <h2 className={styles.sectionTitle}>{t("whyBuiltTitle")}</h2>
                         <p className={styles.paragraph}>
                             {t.rich("whyBuiltText", {
-                            strong: (chunks) => <strong>{chunks}</strong>,
-                            pageLink: (chunks) => <LinksInternos routeKey="contador" />,
+                                strong: (chunks) => <strong>{chunks}</strong>,
+                                pageLink: (chunks) => (
+                                    <Link href={getLocalizedPath("boring", locale)} className={styles.link}>
+                                        {chunks}
+                                    </Link>
+                                )
                             })}
                         </p>
                     </section>

@@ -10,7 +10,7 @@ import LanguageSwitcher from "../navegation/LanguageSwitcher";
 export default function ContadorPalavras() {
     const t = useTranslations("ContadorPalavras");
     const tNav = useTranslations("Navigation");
-    const locale = useLocale();
+    const locale = useLocale() as Locale;
     const th = useTranslations("Sobre");
 
     return (
@@ -51,8 +51,12 @@ export default function ContadorPalavras() {
                         <h2 className={styles.sectionTitle}>{t("beginningTitle")}</h2>
                         <p className={styles.paragraph}>
                             {t.rich("beginningText", {
-                            strong: (chunks) => <strong>{chunks}</strong>,
-                            boringSitesLink: (chunks) => <LinksInternos routeKey="boring" />, // Ajuste a rota para a página de Boring Sites
+                                strong: (chunks) => <strong>{chunks}</strong>,
+                                boringSitesLink: (chunks) => (
+                                    <Link href={getLocalizedPath("contador", locale)} className={styles.link}>
+                                        {chunks}
+                                    </Link>
+                                ),
                             })}
                         </p>
                     </section>
@@ -71,8 +75,12 @@ export default function ContadorPalavras() {
                         <h2 className={styles.sectionTitle}>{t("adsenseTitle")}</h2>
                         <p className={styles.paragraph}>
                             {t.rich("adsenseText", {
-                            strong: (chunks) => <strong>{chunks}</strong>,
-                            boringSitesLink: (chunks) => <LinksInternos routeKey="contador" />, // Ajuste para a rota de Boring Sites
+                                strong: (chunks) => <strong>{chunks}</strong>,
+                                boringSitesLink: (chunks) => (
+                                    <Link href={getLocalizedPath("contador", locale)} className={styles.link}>
+                                        {chunks}
+                                    </Link>
+                                )
                             })}
                         </p>
                     </section>

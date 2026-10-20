@@ -28,7 +28,7 @@ const iconsByRoute: Record<NavegationKey, LucideIcon> = {
     contador: BookOpen
 }
 
-export default function LinksInternos({routeKey}: {routeKey: NavegationKey}){
+export default function LinksInternos({routeKey, showIcon = true}: {routeKey: NavegationKey; showIcon?:boolean}){
 
     const locale = useLocale() as Locale;
     const t = useTranslations("Navigation");
@@ -42,7 +42,7 @@ export default function LinksInternos({routeKey}: {routeKey: NavegationKey}){
     return (
         <div className={styles.links}>
             <Link href={getLocalizedPath(routeKey, locale)} className={`${isActive ? styles.active : ""}`}>
-                <Icon size={20}/> <span>{t(routeKey)}</span>
+                {showIcon && <Icon size={20}/>} <span>{t(routeKey)}</span>
             </Link>
         </div>
     );

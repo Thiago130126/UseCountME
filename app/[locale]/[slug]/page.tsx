@@ -38,7 +38,7 @@ function getRouteUrls(
 
 export async function generateMetadata({
     params,
-    }: PageProps ): Promise<Metadata> {
+}: PageProps): Promise<Metadata> {
     const { locale, slug } = await params;
 
     const routeKey = getRouteKey(locale, slug);
@@ -47,65 +47,90 @@ export async function generateMetadata({
         notFound();
     }
 
-    const namespace =
-        routeKey === "about" ? "Sobre" : "PoliticaPrivacidade";
-
-    const t = await getTranslations({
-        locale,
-        namespace,
-    });
-
     const baseUrl = "https://www.usecountme.com";
     const typedLocale = locale as Locale;
     const localizedSlug = localizedRoutes[routeKey][typedLocale];
     const canonical = `${baseUrl}/${locale}/${localizedSlug}`;
 
-    const title = t("seoTitle" );
-    const description = t("seoDescription");
-
     const ogLocale =
         locale === "pt"
-        ? "pt_BR"
-        : locale === "es"
-            ? "es_ES"
-            : "en_US";
+            ? "pt_BR"
+            : locale === "es"
+                ? "es_ES"
+                : "en_US";
+
+    let title = "";
+    let description = "";
+    let keywords: string[] | undefined;
+
+    if (routeKey === "boring") {
+        const t = await getTranslations({
+            locale,
+            namespace: "BoringSitesMetadata",
+        });
+
+        title = t("title");
+        description = t("description");
+        keywords = t.raw("keywords") as string[];
+    } else if (routeKey === "contador") {
+        const t = await getTranslations({
+            locale,
+            namespace: "ContadorMetadata",
+        });
+
+        title = t("title");
+        description = t("description");
+        keywords = t.raw("keywords") as string[];
+    } else {
+        const namespace =
+            routeKey === "about" ? "Sobre" : "PoliticaPrivacidade";
+
+        const t = await getTranslations({
+            locale,
+            namespace,
+        });
+
+        title = t("seoTitle");
+        description = t("seoDescription");
+    }
 
     return {
         title,
         description,
+        ...(keywords ? { keywords } : {}),
 
         alternates: {
-        canonical,
-        languages: getRouteUrls(routeKey),
+            canonical,
+            languages: getRouteUrls(routeKey),
         },
 
         openGraph: {
-        title,
-        description,
-        url: canonical,
-        siteName: "Use Count Me",
-        type: "website",
-        locale: ogLocale,
-        images: [
-            {
-                url: "https://www.usecountme.com/og-image.png",
-                width: 1200,
-                height: 630,
-                alt: title,
-            }
-        ]
+            title,
+            description,
+            url: canonical,
+            siteName: "Use Count Me",
+            type: "website",
+            locale: ogLocale,
+            images: [
+                {
+                    url: "https://www.usecountme.com/og-image.png",
+                    width: 1200,
+                    height: 630,
+                    alt: title,
+                },
+            ],
         },
 
         twitter: {
-        card: "summary",
-        title,
-        description,
-        images: ["https://www.usecountme.com/og-image.png"],
+            card: "summary",
+            title,
+            description,
+            images: ["https://www.usecountme.com/og-image.png"],
         },
 
         robots: {
-        index: true,
-        follow: true,
+            index: true,
+            follow: true,
         },
     };
 }

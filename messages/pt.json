@@ -128,7 +128,7 @@
     },
     "BoringSitesMetadata": {
         "title": "Use Count Me | Boring Site",
-        "description": "Um boring site, criado por um dev solo",
+        "description": "Uma reflexão sobre boring sites e a experiência de criar um projeto independente.",
         "keywords": [
             "boring site",
             "como criar um boring site",
@@ -141,7 +141,7 @@
     },
     "ContadorMetadata": {
         "title": "Use Count Me | Boring Site",
-        "description": "Um boring site, criado por um dev solo",
+        "description": "La historia detrás de Use Count Me: la experiencia de crear un contador de palabras como desarrollador en solitario",
         "keywords": [
             "boring site",
             "criar contador de palavras",
@@ -243,7 +243,7 @@
         "whyBuiltTitle": "Por Que Escolhi Criar o Use Count Me?",
         "whyBuiltText": "O Use Count Me é o meu segundo projeto real no ar. O meu primeiro foi uma web app single-page de gestão financeira com um monte de tecnologia legal, mas que me tomou um tempão absurdo. Como eu queria pegar mais bagagem com Next.js, React e projetos reais sem demorar meses, decidi apostar em um boring site. E honestamente? Apesar de ter me dado uma boa dor de cabeça, história que eu conto em detalhes nesta <pageLink>página</pageLink>, aprendi demais! Tô aprendendo a manter uma aplicação rodando na prática, entendendo SEO na vida real, lancei meu primeiro projeto internacional em português, inglês e espanhol, e ainda cometi um monte de erros que vão me deixar um dev muito melhor.",
         "seoTitle": "Boring Sites | Use Count Me",
-        "seoDescription": "Um boring site, criado por um dev solo"
+        "seoDescription": "Uma reflexão sobre boring sites e a experiência de criar um projeto independente."
     },
     "ContadorPalavras": {
         "title": "Contador de Palavras",
@@ -259,6 +259,6 @@
         "worthItTitle": "Valeu a Pena?",
         "worthItText": "Sem dúvida nenhuma valeu a pena! Eu cometi vários erros no desenvolvimento, até porque este é o meu segundo projeto real no ar. Errei feio na organização dos componentes do React (para quem não sabe, no React a interface é dividida em peças reutilizáveis tipo Lego). Eu acabei não transformando o header, o footer e a navbar em componentes reutilizáveis... então sim, tô literalmente fazendo Ctrl+C e Ctrl+V no código desses elementos para cada página nova que crio! E por que não arrumo? Preguiça pura! Teria que mexer no HTML e no CSS de todas as páginas já criadas. Outro vacilo foi ter hospedado na Vercel achando que não teria custo comercial — não existe almoço grátis. Mas cada erro cometido nesse projeto, seja no código ou no deploy, serve como um aprendizado gigante pros próximos trabalhos que vêm pela frente. Foi muito divertido criar o Use Count Me e, se você leu até aqui, tô sinceramente surpreso! Dito isso, bora pro próximo projeto!",
         "seoTitle": "Contador de Palavras | Use Count Me",
-        "seoDescription": "Um contador de palavras, criado por um dev solo"
+        "seoDescription": "La historia detrás de Use Count Me: la experiencia de crear un contador de palabras como desarrollador en solitario"
     }
 }
